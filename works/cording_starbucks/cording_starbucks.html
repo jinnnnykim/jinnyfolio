@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>작품설명 &hyphen; Starbucks</title>
+<!-- 구글 웹폰트 http://fonts.google.com -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- 구글 웹아이콘 https://fonts.google.com/icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- 아이온 웹아이콘 http://ionicons.com/v2 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- 어썸폰트 웹아이콘 -->
+<script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+
+<!-- 본문 서체 -->
+<link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+
+<!-- 글꼴 소개 서체 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="../css/works_common.css">
+
+<style>
+  /* 타이틀 배경 */
+.title_area {width:100%; height:500px; background:url(../../images/thumbnail/starbucks.jpg) center bottom no-repeat; background-attachment:fixed; background-size:cover;}
+
+  /* Fonts */
+.f1 {font:24px 'Noto Sans KR';}
+.f2 {font:24px 'Raleway';}
+
+  /* Colors */
+.c1 {background:#fff; border:1px solid #ccc; box-sizing:border-box;}
+.c2 {background:#00623d;}
+/* .c3 {background:#6c1816;} */
+
+  /* 버튼 */
+.site_go.web {left:calc(50% - 260px);}
+.site_go.tab {left:calc(50% + 10px);}
+</style>
+</head>
+<body>
+<section id="intro">
+  <div class="title_area">
+    <div class="main">
+      <p class="title">스타벅스 &lpar;Starbucks&rpar;</p>
+      <p class="category">Redesign &amp; Cording</p>
+    </div>
+  </div>
+  <div class="info">
+    <div class="inner">
+      <div class="introduce">
+        세계적인 카페 브랜드 &lsquo;스타벅스 &lpar;Starbucks&rpar;&rsquo;의 <b>웹용&sol;태블릿용 메인페이지</b>를 리디자인하였습니다.<br>
+        <b>12col Grid</b>와 <b>여백</b>을 적극 활용하는 레이아웃으로 <b>개방감</b>을 주고&comma; 가독성이 좋고 깔끔한 <b>Noto Sans KR</b>을 주로 사용하되<br>
+        Visual 영역에는 포인트가 되는 <b>개성적인 글꼴</b>을 사용하여 젊은 느낌을 더했습니다.
+      </div>
+      <ul class="source">
+        <li>
+          <div>프로젝트 구분 <span class="source_small">contribution</span></div>
+          <p>개인 작품</p>
+          <p>기여도 100&percnt;</p>
+        </li>
+        <li>
+          <div>글꼴 <span class="source_small">font</span></div>
+          <p class="font f1">Noto Sans KR</p>
+          <p class="font f2">Raleway</p>
+        </li>
+        <li>
+          <div>주조색 <span class="source_small">main color</span></div>
+          <span class="colors c1"></span><span class="colors c2"></span><!--<span class="colors c3"></span>-->
+        </li>
+        <li>
+          <div>사용 프로그램 <span class="source_small">tools</span></div>
+          <p>Photoshop</p>
+          <p>HTML5 &sol; CSS3</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="visual">
+  <a href="html/web/web_index.html" class="site_go web"><span>웹 사이트 보기</span>&nbsp;<span class="material-symbols-outlined">arrow_outward</span></a>
+  <a href="html/tab/tab_index.html" class="site_go tab"><span>태블릿 사이트 보기</span>&nbsp;<span class="material-symbols-outlined">arrow_outward</span></a>
+  <img src="images/starbucks-web-mockup.jpg" alt="메인페이지 목업 이미지" class="mockup_img">
+</section>
+<section id="detail">
+  <div class="inner">
+    <h3>detailed images</h3>
+    <p class="detail_name">web &hyphen; Main Page</p>
+    <img src="images/starbucks-web-main.jpg" alt="스타벅스 웹용 메인페이지" class="detail_img">
+    <p class="detail_name">tablet &hyphen; Main Page</p>
+    <img src="images/starbucks-tab-main.jpg" alt="스타벅스 태블릿용 메인페이지" class="detail_img">
+  </div>
+</section>
+<a href="#" onclick="window.close(); return false;"><span class="material-symbols-outlined" id="exit">close</span></a>
+<footer id="footer">
+<div>Jinny Kim &copy; 2023 All rights Reserved</div>
+</footer>
+</body>
+</html>

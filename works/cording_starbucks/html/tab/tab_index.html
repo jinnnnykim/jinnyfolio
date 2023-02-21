@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* Tag Reset(초기화) */
+	html,body { height:100%; }
+	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd { margin:0; padding:0; }
+	h1,h2,h3,h4,h5,h6 { font-size:14px; }
+		/* 예를 들면 h1 부분에 로고를 넣는다고 하면 기본적으로 부여된 사이즈때문에 padding 처럼 여백이 남을 수도 있기 때문에 */
+	ul { list-style:none; }
+	img {
+		border:0; /* IE(인터넷 익스플로러) 하위 버전에서 이미지 링크 시 테두리 생기는 것을 방지 */
+		vertical-align: top; /* 크롬 등 일부 브라우저에서 이미지 배열 시 생기는 공백 오류를 방지 */
+	}
+
+	body {
+		background-image:url(images/background.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	a { text-decoration: none; }
+
+	#header .inner { position:relative; height:200px; width:1400px; margin:0 auto; }
+
+	#visual .inner { position:relative; height:2190px; width:1400px; margin:0 auto; }
+
+	#contents { background-color:white;  }
+	#contents .inner { position:relative; height:155px; width:1400px; margin:0 auto; }
+
+	#footer { background-color:#00623d; }
+	#footer .inner { position:relative; height:95px; width:1400px; margin:0 auto; }
+
+
+/* HEADER */
+	h1 { width: 75px; float:left; padding-top:33px; }
+	h1 img { width:100%; }
+	.gnb { float:right; padding-top:63px; font-size:18px; }
+	.gnb li { float:left; margin-left:80px; }
+	.gnb a { color:white; transition:0.5s; padding:5px 10px; box-sizing:border-box; }
+	.gnb a:hover { border-bottom:white solid 1px; background: #000;  }
+
+/* VISUAL */
+	p.slogan { position:absolute; right:18px; top:102px; }
+	a.btn { position:absolute; right:18px; top:458px; }
+	a.btn:hover {background-color:rgba(225,225,225,0.3);}
+
+/* CONTENTS */
+	.f_gnb { position:absolute; left:0px; top:65px; }
+	.f_gnb li { float:left; margin-right:126px; }
+	.f_gnb li:last-child { margin-right:0; }
+
+/* FOOTER */
+	p.copyright { position:absolute; left:409px; top:39px; }
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div id="header">
+		<div class="inner">
+			<h1><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5977/5977591.png" alt="starbucks"></a></h1>
+		<nav>
+			<ul class="gnb">
+				<li><a href="#">MENU</a></li>
+				<li><a href="#">AWARDS</a></li>
+				<li><a href="#">GIFT CARD</a></li>
+			</ul>
+		</nav>
+		</div>
+	</div>
+
+
+	<div id="visual">
+		<div class="inner">
+			<p class="slogan"><img src="images/slogan.png" alt="We Believe in the Pursuit of Doing Good"></p>
+			<a href="#" class="btn"><img src="images/btn.png" alt="learn more"></a>
+		</div>
+	</div>
+
+	<div id="contents">
+		<div class="inner">
+			<ul class="f_gnb">
+				<li><a href="#"><img src="images/f_gnb1.png" alt="About Us"></a></li>
+				<li><a href="#"><img src="images/f_gnb2.png" alt="Career"></a></li>
+				<li><a href="#"><img src="images/f_gnb3.png" alt="Social Impact"></a></li>
+				<li><a href="#"><img src="images/f_gnb4.png" alt="For business Partners"></a></li>
+				<li><a href="#"><img src="images/f_gnb5.png" alt="Order and PickUp"></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div id="footer">
+		<div class="inner">
+			<p class="copyright"><img src="images/copyright.png" alt="Copyright &copy; 2022 Starbucks Coffee Company. All Rights Reserved."></p>
+		</div>
+	</div>
+
+</body>
+</html>

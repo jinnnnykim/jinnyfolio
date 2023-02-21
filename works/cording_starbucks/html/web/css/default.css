@@ -1,0 +1,91 @@
+/* Tag Reset(초기화) */
+html,body { height:100%; }
+html { scroll-behavior:smooth; }
+* { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6 { font-size:12px; } /* 예를 들면 h1 부분에 로고를 넣는다고 하면 기본적으로 부여된 사이즈때문에 padding 처럼 여백이 남을 수도 있다 */
+ul { list-style:none; }
+img {
+  border:0; /* IE(인터넷 익스플로러) 하위 버전에서 이미지 링크 시 테두리 생기는 것을 방지 */
+  vertical-align: top;	/* 크롬 등 일부 브라우저에서 이미지 배열 시 생기는 공백 오류를 방지 */
+}
+
+  /* 기본 설정 */
+body { width:100%; font-size:14px; font-family:'Noto Sans KR'; background-image:url(../images/BG.jpg); background-position:center top; background-repeat:no-repeat; width:100%; }
+a { text-decoration:none; color:#555; }
+
+
+  /* HEADER */
+#header .inner { width:1200px; height:140px; margin:0 auto; }
+
+h1 { width: 75px; float:left; padding-top:33px; }
+h1 img { width:100%; }
+.gnb { float:right; padding-top:63px; font-size:18px; }
+.gnb li { float:left; margin-left:80px; }
+.gnb a { color:white; transition:0.5s; padding:5px 10px; box-sizing:border-box; }
+.gnb a:hover { border-bottom:white solid 1px; background: #000;  }
+
+
+  /* VISUAL */
+#visual .inner { position:relative; width:1200px; height:740px; margin:0 auto; }
+#visual .inner p { position:absolute; left:15px; top:114px; color:white; margin-bottom:36px; font-size:60px; line-height:63px; }
+#visual .inner a.btn { position:absolute; left:15px; top:334px; font-size:18px; letter-spacing:6px; padding:18px 38px; border:3px solid white; color:white; transition:0.5s; }
+#visual .inner a:hover { background-color:rgba(225,225,225,0.3); }
+
+
+
+  /* CONTAINER*/
+#container .inner { width:1200px; height:1680px; margin:0 auto; }
+
+.c1 { margin-bottom:40px; }
+.c1:after { content: ""; display: block; clear: both; }
+.c1 li { float:left; margin-top:40px; transition:0.5s; }
+.c1 li:nth-child(2) { margin-top:0px; margin-left:40px; margin-right:40px; }
+.c1 li:hover { transform:scale(1.03,1.03); }
+
+.c2 { margin-bottom:40px; width:100%; transition:0.5s; }
+.c2:hover { transform:scale(1.02,1.02); }
+
+.c3-1, .c3-2 { float:left; }
+.c3-1 { width:580px; margin-right:40px; transition:0.5s; }
+.c3-1:hover { transform:scale(1.02,1.02); }
+
+.c3-2 img.icon { width:30px; margin-right:10px; }
+.c3-2 h3 { margin-top:22px; margin-left:25px; font-size:23px; font-weight:500; color:#00623d;}
+
+.c3-2 div.sns { position:relative; width:580px; height:230px; border:2px solid #e4e4e4; box-sizing:border-box; background-color:white; }
+.c3-2 table.s_t { margin:29px 0; }
+.c3-2 table.s_t td { text-align:center; width:25%; font-size:16px; border-right:1px #ccc solid; }
+.c3-2 table.s_t td:last-child { border:none; }
+.c3-2 .c_sns { width:55px; margin-bottom:28px; }
+
+.c3-2 div.notice { position:relative; width:580px; height:230px; border:2px solid #e4e4e4; box-sizing:border-box; background-color:white; margin-top:40px;}
+.c3-2 table.n_t { color:#555; font-size:16px; margin-top:10px; margin-bottom:12px; margin-left:28px; width:520px; height:150px; border-collapse:collapse; border:white 2px solid; }
+.c3-2 table.n_t td { height:33.33%; border-top: 1px #ccc solid; }
+.c3-2 table.n_t .date { text-align:right; font-size:11px; /*line-height:50px;*/ }
+.c3-2 table.n_t a:hover {color:#00623d;}
+
+
+
+  /* FOOTER */
+#footer .area1 { background-color:#eee; }
+#footer .area2 { background-color:#222; padding:40px 0; }
+
+#footer .area1 .inner { width:1200px; margin:0 auto; }
+#footer .area1 .inner:after { content:""; display:block; clear:both; }
+#footer .area2 .inner { width:1200px; margin:0 auto; }
+
+
+.site { float:left; width:20%; margin-top:40px; margin-bottom:60px; }
+.site a:hover {color:black;}
+.site h3 { font-size:15px; margin-bottom:20px; font-weight:500; color:#333;}
+.site li { line-height:26px; }
+
+.cp1 { color:#ccc; font-size:12px; }
+.cp1 ul:after { content:""; display:block; clear:both; }
+.cp1 ul li { 
+  float:right; box-sizing:border-box; padding:0 20px;
+         /* margin 공간에는 배경 X / padding 공간에는 배경 O */
+  border-left:1px solid #444; }
+.cp1 ul li:last-child { border:none; }
+.cp1 img { width:100px; float:left; padding-top:4px; }
+.cp2 { color:#999; font-size:12px; margin-top:10px; text-align:right; padding-right:18px; }
