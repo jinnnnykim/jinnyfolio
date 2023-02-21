@@ -1,0 +1,21 @@
+
+/* Reset */
+html,body {height:100%;}
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input {margin:0; padding:0;}
+h1,h2,h3,h4 {font-size:10px;}
+ul,li,ol {list-style:none;}
+img,fieldset,iframe {border:0;}
+img {vertical-align:top;}
+table {border-collapse:collapse;}
+a {text-decoration:none;}
+
+/* Base */
+body {overflow-x:hidden; font:400 1.2rem 'SUIT'; color:#111; line-height:1.8em;}
+a {color:#111; transition:.2s;}
+.blind {position:absolute; left:0; top:-99999px;}
+.skip_navigation a {position:absolute; left:0px; top:-99999px; z-index:1000; color:white; background:black; padding:10px 15px;}
+
+/* Layout */
+#works_container {padding:80px 360px;}
+#works_container .inner {width:100%; height:auto; border:5px solid lightcyan;}
+/* .work_card {width:calc(100% - )} */

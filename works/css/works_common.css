@@ -1,0 +1,57 @@
+
+/* Reset */
+html,body {height:100%;}
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input {margin:0; padding:0;}
+h1,h2,h3,h4 {font-size:10px;}
+ul,li,ol {list-style:none;}
+img,fieldset,iframe {border:0;}
+img {vertical-align:top;}
+table {border-collapse:collapse;}
+a {text-decoration:none;}
+
+/* Base */
+body {font:400 1.2rem 'SUIT'; color:#111; line-height:2rem;}
+a {color:#111;}
+.blind {position:absolute; left:0; top:-99999px;}
+.skip_navigation a {position:absolute; left:0px; top:-99999px; z-index:1000; color:white; background:black; padding:10px 15px;}
+
+/* Layout */
+#exit {position:fixed; right:40px; top:40px; z-index:100; color:#aaa; font-size:40px;}
+.inner {width:1200px;}
+
+/* Intro */
+.main {display:flex; flex-direction:column; justify-content:center; width:100%; height:100%; text-align:center;}
+.title {color:white; font-size:60px; font-weight:400;}
+.category {margin-top:40px; color:white; font:400 italic 24px 'Bodoni Moda'; text-transform:capitalize;}
+
+.info .inner {margin:200px auto 100px auto; text-align:center;}
+.introduce {margin-bottom:100px}
+.source {display:flex; justify-content:space-between; text-align:left;}
+.source>li {width:20%;}
+.source li>div {margin-bottom:20px; padding-bottom:10px; width:100%; border-bottom:1px solid #111; font-weight:600;}
+.source .source_small {font-size:1rem; font-weight:400;}
+.font {line-height:40px;}
+.colors {display:inline-block; margin-right:15px; width:30px; height:30px; border-radius:50%;}
+
+
+/* Visual */
+#visual {position:relative;}
+.mockup_img {width:100%;}
+.site_go {
+  display:flex; justify-content:center;
+  position:absolute; left:calc(50% - 250px/2); top:70px; width:250px; height:60px; border-radius:500px;
+  opacity:1; z-index:100; transition:0.5s; margin:0 auto;
+  background:black; color:white; align-items:center; font-size:22px;
+}
+.site_go:after {content:""; display:block; clear:both;}
+.site_go span {float:left; line-height:450px;}
+.site_go:hover {background:#6c1816;}
+
+/* Detail */
+#detail .inner {margin:0 auto; text-align:center;}
+#detail h3 {width:100%; height:100px; margin-top:300px; margin-bottom:200px; border-top:1px solid #777; border-bottom:1px solid #777; font-size:40px; font-weight:600; text-transform:capitalize; line-height:100px;}
+.detail_name {padding-left:20px; margin-bottom:100px; border-left: 10px solid #6c1816; font-weight:600; text-transform:capitalize; text-align:left;}
+.detail_img {width:100%; margin-bottom:200px; box-shadow:0 0 15px rgba(0,0,0,0.1);}
+
+/* Footer */
+#footer {padding:20px; background:#eee; text-align:center; font-size:1rem;}
