@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Works All</title>
+<!-- 구글 웹아이콘 https://fonts.google.com/icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<style>
+/* Reset */
+html,body {height:100%;}
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input {margin:0; padding:0;}
+h1,h2,h3,h4 {font-size:10px;}
+ul,li,ol {list-style:none;}
+img,fieldset,iframe {border:0;}
+img {vertical-align:top;}
+table {border-collapse:collapse;}
+a {text-decoration:none;}
+
+/* Base */
+body {background:#111; font:400 1.2rem 'SUIT'; color:#111; /*overflow:hidden;*/}
+a {color:#111; transition:.2s;}
+.blind {position:absolute; left:0; top:-99999px;}
+.skip_navigation a {position:absolute; left:0px; top:-99999px; z-index:1000; color:white; background:black; padding:10px 15px;}
+
+/* Layout */
+#works_container {padding:60px 0;}
+#works_container .inner {margin:0 auto; width:1200px; /*overflow-y:scroll;*/}
+#footer {position:fixed; left:0px; bottom:0px; width:100%; height:80px; background:#111;}
+#exit {position:fixed; right:40px; top:40px; z-index:1000; color:#aaa; font-size:40px;}
+.frame {position:fixed; left:0px; top:0px; z-index:100; width:100%; height:80px; background:#111;}
+
+/* Container */
+.menu {position:fixed; left:100px; top:100px; text-transform:capitalize;}
+.menu li a {line-height:40px;}
+
+#works_container .work_card {width:360px; height:280px; margin:20px; overflow:hidden; background:white; transition:0.5s;}
+#works_container .work_card:hover {transform:skew(-1deg, 1deg);}
+#works_container .work_card:hover .title {color:darkcyan;}
+.basic {padding-left:40px; padding-top:40px; box-sizing:border-box;}
+.basic .title {text-transform:uppercase; font-size:25px; font-weight:800; margin-bottom:10px; transition:0.5s;}
+.basic .category {color:#555; text-transform:capitalize; font-style:italic; font-size:16px; font-weight:400; letter-spacing:0.5px;}
+.impact .circle {float:right; width:180px; height:180px; margin-right:-45px; margin-top:45px; background:#b6fff9; border-radius:50%;}
+.impact .icon {float:right;}
+
+.gm .impact .icon {width:140px; margin-right:-80px; margin-top:80px;}
+.mk .impact .icon {width:100px; margin-right:-70px; margin-top:40px;}
+.ck .impact .icon {width:80px; margin-right:-70px; margin-top:30px;}
+.tp .impact .icon {width:140px; margin-right:-80px; margin-top:60px;}
+.lg .impact .icon {width:140px; margin-right:-80px; margin-top:60px;}
+.mw .impact .icon {width:90px; margin-right:-60px; margin-top:60px;}
+.tt .impact .icon {width:80px; margin-right:-55px; margin-top:45px;}
+.bb .impact .icon {width:90px; margin-right:-50px; margin-top:45px;}
+.ls .impact .icon {width:100px; margin-right:-75px; margin-top:50px;}
+.aq .impact .icon {width:80px; margin-right:-55px; margin-top:50px;}
+
+/* Footer */
+#footer div {color:#bbb; font-size:12px; font-weight:100; letter-spacing:1px; text-transform:capitalize; text-align:center; line-height:80px;}
+</style>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+<script>
+$(function(){
+
+	$('#works_container .inner').masonry({
+		itemSelector:'.work_card',
+	});
+
+  $('.menu li a').css({fontWeight:'400', color:'white'});
+  $('.menu li:eq(0) a').css({fontWeight:'800', color:'#b6fff9'});
+
+	$('.menu li:eq(0) a').click(function(){ //all
+		$('.work_card').show();
+		$('#works_container .inner').stop().masonry('layout');
+    $('.menu li a').css({fontWeight:'400', color:'white'});
+    $(this).css({fontWeight:'800', color:'#b6fff9'});
+	});
+
+	$('.menu li:eq(1) a').click(function(){ //coding
+    $('.work_card').show();
+		$('.design').hide();
+		$('#works_container .inner').stop().masonry('layout');
+    $('.menu li a').css({fontWeight:'400', color:'white'});
+    $(this).css({fontWeight:'800', color:'#b6fff9'});
+	});
+
+	$('.menu li:eq(2) a').click(function(){ //design
+    $('.work_card').show();
+		$('.cording').hide();
+		$('#works_container .inner').stop().masonry('layout');
+    $('.menu li a').css({fontWeight:'400', color:'white'});
+    $(this).css({fontWeight:'800', color:'#b6fff9'});
+	});
+
+});
+</script>
+</head>
+<body>
+<nav class="menu">
+  <ul>
+    <li><a href="#">all</a></li>
+    <li><a href="#">coding</a></li>
+    <li><a href="#">design</a></li>
+  </ul>
+</nav>
+<section id="works_container">
+  <div class="frame"></div>
+  <div class="inner">
+    <div class="work_card" style="position:absolute; left:0px; top:150px; border:0; width:1px; height:0; margin:0; padding:0;"><!-- trick --></div>
+    <a href="../works/cording_gentlemonster/cording_gentlemonster.html" target="black"><div class="work_card cording gm">
+      <div class="basic">
+        <p class="title">gentle monster</p>
+        <p class="category">design&amp;cording</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/gm_sgls.png" alt="젠틀몬스터 선글라스" class="icon">
+      </div>
+    </div></a>
+    
+    <a href="../works/cording_maisonkitsune/cording_maisonkitsune.html" target="black"><div class="work_card cording mk">
+      <div class="basic">
+        <p class="title">maison kitsune</p>
+        <p class="category">design&amp;cording</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/mk_fox.png" alt="메종키츠네 여우" class="icon">
+      </div>
+    </div></a>
+
+    <a href="../works/design_lush/design_lush.html" target="black"><div class="work_card design ls">
+      <div class="basic">
+        <p class="title">lush</p>
+        <p class="category">design only</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/ls_bathbomb.png" alt="러쉬" class="icon">
+      </div>
+    </div></a>
+
+    <a href="../works/cording_thisisneverthat/cording_thisisneverthat.html" target="black"><div class="work_card cording tt">
+      <div class="basic">
+        <p class="title">thisisneverthat</p>
+        <p class="category">mobile design&amp;cording</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/tnt_icon.png" alt="디스이즈네버댓" class="icon">
+      </div>
+    </div></a>
+
+    <a href="../works/design_burtsbees/design_burtsbees.html" target="black"><div class="work_card design bb">
+      <div class="basic">
+        <p class="title">burt's bees</p>
+        <p class="category">mobile design only</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/BurtsBees.png" alt="버츠비" class="icon">
+      </div>
+    </div></a>
+    
+    <a href="../works/cording_charlesandkeith/cording_charlesandkeith.html" target="black"><div class="work_card cording ck">
+      <div class="basic">
+        <p class="title">charles &amp; keith</p>
+        <p class="category">design&amp;cording</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/ck_bag.png" alt="찰스앤키스 가방" class="icon">
+      </div>
+    </div></a>
+
+    <a href="../works/cording_aquadeparma/cording_aquadeparma.html" target="black"><div class="work_card cording aq">
+      <div class="basic">
+        <p class="title">aqua de parma</p>
+        <p class="category">design only</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/aqua.png" alt="아쿠아디파르마" class="icon">
+      </div>
+    </div></a>
+
+    <a href="../works/design/design_namecard.html" target="black"><div class="work_card design lg">
+      <div class="basic">
+        <p class="title">namecard</p>
+        <p class="category">logo design</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/logo.png" alt="명함" class="icon">
+      </div>
+    </div></a>
+    
+    <a href="../works/design/design_poster.html" target="black"><div class="work_card design tp">
+      <div class="basic">
+        <p class="title">concert poster</p>
+        <p class="category">typography design</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/typo.png" alt="콘서트 포스터" class="icon">
+      </div>
+    </div></a>
+    
+    <a href="../works/design/design_brochure.html" target="black"><div class="work_card design tp">
+      <div class="basic">
+        <p class="title">brand brochure</p>
+        <p class="category">typography design</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/typo.png" alt="브랜드 브로셔" class="icon">
+      </div>
+    </div></a>
+
+    <a href="../works/design/design_wallpaper1.html" target="black"><div class="work_card design mw">
+      <div class="basic">
+        <p class="title">girl wallpaper</p>
+        <p class="category">graphic design</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/smartphone.png" alt="스마트폰 배경화면" class="icon">
+      </div>
+    </div></a>
+  
+    <a href="../works/design/design_wallpaper2.html" target="black"><div class="work_card design mw">
+      <div class="basic">
+        <p class="title">swim wallpaper</p>
+        <p class="category">graphic design</p>
+      </div>
+      <div class="impact">
+        <div class="circle"></div>
+        <img src="../images/list_icons/smartphone.png" alt="스마트폰 배경화면" class="icon">
+      </div>
+    </div></a>
+    
+  </div>
+</section>
+<a href="../index.html #works"><span class="material-symbols-outlined" id="exit">close</span></a>
+<footer id="footer">
+  <div>Jinny Kim &copy; 2023 All rights Reserved</div>
+</footer>
+</body>
+</html>
