@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Maison Kitsune&#769;</title>
+<!-- 아이콘 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
+<!-- 글꼴 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/sub_mediaquery.css">
+ 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/sub_gnb.js"></script>
+<script>
+$(function(){ //팝업
+  $('body').css({overflow:'hidden'});
+  $('.pop_exit').click(function(){
+    $('.information_pop').slideUp();
+    $('body').css({overflow:'auto'});
+  });
+});
+$(function(){ //페이지 번호
+  $('.page_btn li a').eq(0).addClass('page_fo');
+  $('.page_btn li a').click(function(){
+    $('.page_btn li a').removeClass('page_fo');
+    $(this).addClass('page_fo');
+    return false;
+  });
+});
+</script>
+</head>
+<body>
+<div class="skip_navigation">
+  <a href="#container">본문 바로가기</a>
+  <a href="#footer">하단 바로가기</a>
+</div>
+<header id="header">
+<div class="inner">
+  <h1><a href="#"><img src="images/logo_mk.svg" alt="Maison Kitsune"></a></h1>
+  <h2 class="blind">주요 메뉴</h2>
+  <nav class="sub_gnb">
+    <ul>
+      <li class="main">
+        <a href="#">남성</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">여성</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+          <li><a href="#">치마</a></li>
+          <li><a href="#">원피스</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">아동</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+          <li><a href="#">치마</a></li>
+          <li><a href="#">원피스</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">잡화</a>
+        <ul class="sub">
+          <li><a href="#">가방</a></li>
+          <li><a href="#">모자</a></li>
+          <li><a href="#">신발</a></li>
+          <li><a href="#">양말</a></li>
+          <li><a href="#">스카프&amp;머플러</a></li>
+          <li><a href="#">주얼리</a></li>
+          <li><a href="#">스마트폰 액세서리</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">콜라보</a>
+        <ul class="sub">
+          <li><a href="#">콜라보 상품</a></li>
+        </ul>
+      </li>
+      <div class="in_gnb_util">
+        <h2 class="blind">도구 메뉴</h2>
+        <div>
+          <form action="#">
+            <fieldset>
+              <legend class="blind">통합검색</legend>
+              <label for="search_text" class="blind">검색어 입력</label>
+              <input type="text" id="search_text">
+              <a href="#"><span class="ion-ios-search-strong icon"><b class="blind">검색</b></span></a>
+            </fieldset>
+          </form>
+        </div>
+        <ul>
+          <li><a href="#"><span class="material-symbols-outlined icon">notifications<b class="blind">알림</b></span></a></li>
+          <li><a href="#"><span class="ion-android-person icon"><b class="blind">마이페이지</b></span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined icon">shopping_bag<b class="blind">장바구니</b></span></a></li>
+        </ul>
+      </div>
+    </ul>
+  </nav>
+  <ul class="util">
+    <h2 class="blind">도구 메뉴</h2>
+    <li>
+      <form action="#">
+      <fieldset>
+        <legend class="blind">통합검색</legend>
+        <label for="search_text" class="blind">검색어 입력</label>
+        <input type="text" id="search_text">
+        <a href="#"><span class="ion-ios-search-strong icon"><b class="blind">검색</b></span></a>
+      </fieldset>
+      </form>
+    </li>
+    <li><a href="#"><span class="material-symbols-outlined icon">notifications<b class="blind">알림</b></span></a></li>
+    <li><a href="#"><span class="ion-android-person icon"><b class="blind">마이페이지</b></span></a></li>
+    <li><a href="#"><span class="material-symbols-outlined icon">shopping_bag<b class="blind">장바구니</b></span></a></li>
+  </ul>
+  <div class="gnb_btn">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<div class="sub_bg"></div>
+</header>
+<section id="container_sub">
+  <div class="products_wrap">
+    <div class="products"><a href="#">
+      <img src="images/new_products/Le_Richelieu.jpg" alt="르 리슐리에 릴렉스 맨투맨">
+      <div class="pd_info">
+        <p class="name">르 리슐리에 릴렉스 맨투맨</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/double_foxhead_hoodi.jpg" alt="더블 폭스헤드 패치 후디">
+      <div class="pd_info">
+        <p class="name">더블 폭스헤드 패치 후디</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/foxhead_polo.jpg" alt="폭스헤드 패치 폴로 점퍼">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 폴로 점퍼</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/fox_sweater.jpg" alt="폭스 스웨터">
+      <div class="pd_info">
+        <p class="name">폭스 스웨터</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/monochorme_double_foxhead_mtm.jpg" alt="모노크롬 더블 폭스헤드 어드저스티드 맨투맨">
+      <div class="pd_info">
+        <p class="name">모노크롬 더블 폭스헤드 어드저스티드 맨투맨</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/oly_palais_royal_adjusted_mtm.jpg" alt="올리 팔레 로얄 어드저스티드 맨투맨">
+      <div class="pd_info">
+        <p class="name">올리 팔레 로얄 어드저스티드 맨투맨</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/foxehead_shirts.jpg" alt="폭스헤드 자수 클래식 셔츠">
+      <div class="pd_info">
+        <p class="name">폭스헤드 자수 클래식 셔츠</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/dressedfox_hoodi.jpg" alt="드레스드 폭스 릴렉스핏 후디">
+      <div class="pd_info">
+        <p class="name">드레스드 폭스 릴렉스핏 후디</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/bill_Rebholz_knit.jpg" alt="빌 렙홀츠 자카드 풀오버">
+      <div class="pd_info">
+        <p class="name">빌 렙홀츠 자카드 풀오버</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/double_foxhead_crop.jpg" alt="더블 폭스헤드 패치 크롭 티셔츠">
+      <div class="pd_info">
+        <p class="name">더블 폭스헤드 패치 크롭 티셔츠</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/foxhead_patch_oversize_highneck_knit.jpg" alt="폭스헤드 패치 오버사이즈 하이넥 풀오버">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 오버사이즈 하이넥 풀오버</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/new_products/oversize_foxhead_knit.jpg" alt="오버사이즈 폭스헤드 자카드 풀오버">
+      <div class="pd_info">
+        <p class="name">오버사이즈 폭스헤드 자카드 풀오버</p>
+        <div class="price">
+          <span class="sale">355,200<span class="won">원</span></span>
+          <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+  </div>
+  <ul class="page_btn">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</section>
+<footer id="footer">
+<div class="inner">
+  <div class="sitemap">
+    <h2 class="blind">사이트맵</h2>
+    <ul>
+      <li class="sm_main">
+        <h3>고객 서비스</h3>
+        <ul class="sm_sub">
+          <li><a href="#">주문 조회하기</a></li>
+          <li><a href="#">배송 조회하기</a></li>
+          <li><a href="#">반품하기</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">사이즈 가이드</a></li>
+          <li><a href="#">1:1 문의하기</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>메종키츠네</h3>
+        <ul class="sm_sub">
+          <li><a href="#">매장 찾기</a></li>
+          <li><a href="#">카페 키츠네</a></li>
+          <li><a href="#">커리어</a></li>
+          <li><a href="#">프랜차이즈 문의</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>이용 안내</h3>
+        <ul class="sm_sub">
+          <li><a href="#">법률 정보</a></li>
+          <li><a href="#">메종키츠네 이용 약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>언어(Language)</h3>
+        <form action="#">
+          <fieldset>
+            <legend class="blind">언어 선택</legend>
+            <label for="lang" class="blind">언어 선택</label>
+            <select id="lang" class="lang_choice"> <!-- 1개만 선택할 수 있는 목록 -->
+              <option>Korean</option>
+              <option>English</option>
+            </select>
+          </fieldset>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="copyright">
+    <h2 class="blind">저작권&comma; SNS</h2>
+    <p>&copy; Maison Kitsune&#769; All Reserved 2023</p>
+    <ul>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="인스타그램"></a></li>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2168/2168336.png" alt="트위터"></a></li>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2168/2168281.png" alt="페이스북"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="information_pop">
+  <a href="#" class="pop_exit"><span class="material-symbols-outlined">close</span></a>
+  <p class="pop_text">
+    서브페이지는 <b>반응형 웹사이트</b>로 코딩하였습니다.<br>
+    브라우저 창의 너비를 조절해보시면<br>
+    <b>일반 모니터,</b> <b>폭이 좁은 모니터&lpar;1,400px&rpar;,</b> <b>태블릿PC,</b> <b>모바일</b> 사이트를 보실 수 있습니다.
+  </p>
+</div>
+</body>
+</html>

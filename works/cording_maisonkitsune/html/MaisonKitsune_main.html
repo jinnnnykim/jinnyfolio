@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Maison Kitsune&#769;</title>
+<!-- 아이콘 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
+<!-- 글꼴 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){ //GNB
+  $('.sub').hide();
+  $('.gnb li').mouseover(function(){ 
+    $('.sub',this).stop().slideDown(); 
+  });
+  $('.gnb li').mouseleave(function(){ 
+    $('.sub',this).stop().slideUp();
+  });
+});
+
+$(function(){ //스크롤 효과
+  $('.new_product_i.sweater').css({opacity:0, top:100});
+  $('.new_product_i.bag').css({opacity:0, top:350});
+  $('.new_product_i.case').css({opacity:0, top:650});
+
+  $(window).scroll(function(){
+    let sc=$(document).scrollTop();
+
+    if(sc>=800){$('.new_product_i.sweater').css({top:185, opacity:1,});}
+    if(sc>=1200){$('.new_product_i.bag').css({top:413, opacity:1,});}
+    if(sc>=1400){$('.new_product_i.case').css({top:722, opacity:1,});}
+  });
+});
+
+$(function(){ //팝업
+  $('body').css({overflow:'hidden'});
+  $('.pop_exit').click(function(){
+    $('.information_pop').slideUp();
+    $('body').css({overflow:'auto'});
+  });
+});
+
+</script>
+</head>
+<body>
+<div class="skip_navigation">
+  <a href="#container">본문 바로가기</a>
+  <a href="#footer">하단 바로가기</a>
+</div>
+<header id="header">
+<div class="inner">
+  <h1><a href="#"><img src="images/logo_mk.svg" alt="Maison Kitsune"></a></h1>
+  <h2 class="blind">주요 메뉴</h2>
+  <nav>
+    <ul class="gnb">
+      <li class="main">
+        <a href="#">남성</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="MaisonKitsune_shop.html">여성</a>
+        <ul class="sub">
+          <li><a href="MaisonKitsune_shop.html">아우터</a></li>
+          <li><a href="MaisonKitsune_shop.html">상의</a></li>
+          <li><a href="MaisonKitsune_shop.html">바지</a></li>
+          <li><a href="MaisonKitsune_shop.html">치마</a></li>
+          <li><a href="MaisonKitsune_shop.html">원피스</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">아동</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+          <li><a href="#">치마</a></li>
+          <li><a href="#">원피스</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">잡화</a>
+        <ul class="sub">
+          <li><a href="#">가방</a></li>
+          <li><a href="#">모자</a></li>
+          <li><a href="#">신발</a></li>
+          <li><a href="#">양말</a></li>
+          <li><a href="#">스카프&amp;머플러</a></li>
+          <li><a href="#">주얼리</a></li>
+          <li><a href="#">스마트폰 액세서리</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">콜라보</a>
+        <ul class="sub">
+          <li><a href="#">콜라보 상품</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <ul class="util">
+    <h2 class="blind">도구 메뉴</h2>
+    <li class="test">
+      <form action="#">
+      <fieldset>
+        <legend class="blind">통합검색</legend>
+        <label for="search_text" class="blind">검색어 입력</label>
+        <input type="text" id="search_text">
+        <a href="#"><span class="ion-ios-search-strong icon"><b class="blind">검색</b></span></a>
+      </fieldset>
+      </form>
+    </li>
+    <li><a href="#"><span class="material-symbols-outlined icon">notifications<b class="blind">알림</b></span></a></li>
+    <li><a href="#"><span class="ion-android-person icon"><b class="blind">마이페이지</b></span></a></li>
+    <li><a href="#"><span class="material-symbols-outlined icon">shopping_bag<b class="blind">장바구니</b></span></a></li>
+  </ul>
+</div>
+</header>
+<section id="visual">
+  <div class="visual_area">
+    <div class="gall">
+      <ul>
+        <li class="v1"><a href="#">
+          <img src="images/visual1.jpg" alt="메종키츠네 온라인 컬렉션">
+          <div class="v_text">
+            <div>Maison Kitsune&#769;</div>
+            <p>Online Exclusive Collection</p>
+          </div>
+        </a></li>
+        <li class="v2">
+          <a href="#"><img src="images/visual2.jpg" alt="메종키츠네 2022 가을겨울 룩북"></a>
+        </li>
+        <li class="v3">
+          <a href="#"><img src="images/visual3.jpg" alt="메종키츠네x삼성 콜라보"></a>
+        </li>
+        <li class="v4">
+          <a href="#"><img src="images/visual4.jpg" alt="메종키츠네xMuir Mc Neil 콜라보"></a>
+        </li>
+      </ul>
+    </div>
+    <ul class="gall_menu">
+      <li><a href="#" class="mn" data-idx="0"></a></li>
+      <li><a href="#" class="mn" data-idx="1"></a></li>
+      <li><a href="#" class="mn" data-idx="2"></a></li>
+      <li><a href="#" class="mn" data-idx="3"></a></li>
+    </ul>
+    <a class="gall_btn prev"><span class="material-symbols-outlined">arrow_back_ios <b class="blind">갤러리 이전</b></span></a>
+    <a class="gall_btn next"><span class="material-symbols-outlined">arrow_forward_ios <b class="blind">갤러리 다음</b></span></a>
+  </div>
+</section>
+<section id="container">
+  <div class="con_new">
+    <div class="con_title">
+      <img src="images/title_sdw.png" alt="타이틀 배경" class="sdw_top">
+      <h2>New Collection</h2>
+      <img src="images/title_sdw.png" alt="타이틀 배경" class="sdw_bottom">
+    </div>
+    <div class="inner">
+      <div class="new_ibox1">
+        <img src="images/new1.jpg" alt="가을 컬렉션 룩북 남자" class="new_lookbook">
+        <a href="#" class="new_product sweater">
+          <div class="pd_info">
+            <p class="name">폭스 스웨터</p>
+            <div class="price">
+              <span class="original">&nbsp;520,000&nbsp;</span><span class="percent">32&percnt;</span>
+              <p class="sale">355,200<span class="won">원</span></p>
+            </div>
+          </div>
+          <img src="images/n_sweater.png" alt="폭스 스웨터">
+        </a>
+        <a href="#" class="new_product bag">
+          <img src="images/n_bag.png" alt="크림화이트 픽셀 폭스 위드 래빗 토트백">
+          <div class="pd_info">
+            <p class="name">크림화이트 픽셀 폭스 위드 래빗 토트백</p>
+            <div class="price">
+              <span class="original">&nbsp;160,000&nbsp;</span><span class="percent">38&percnt;</span>
+              <p class="sale">100,000<span class="won">원</span></p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="new_product case">
+          <div class="pd_info">
+            <p class="name">홀로그램 픽셀 폭스 위드 래빗 케이스</p>
+            <div class="price">
+              <span class="original">&nbsp;49,600&nbsp;</span><span class="percent">3&percnt;</span>
+              <p class="sale">37,500<span class="won">원</span></p>
+            </div>
+          </div>
+          <img src="images/n_case.png" alt="픽셀 폭스 위드 래빗 아이폰케이스">
+        </a>
+      </div>
+      <div class="new_ibox2">
+        <img src="images/new2.jpg" alt="가을 컬렉션 룩북 여자" class="new_lookbook">
+      </div>
+      <a href="#" class="new_more">더보기 &gt;</a>
+    </div>
+  </div>
+  <div class="con_gift">
+    <img src="images/con_visual-half.jpg" alt="메종키츠네 홀리데이 기프트 가이드">
+    <div class="gift_title">
+      <div>holiday</div>
+      <p>gift guide</p>
+      <a href="#">자세히 보기 &gt;</a>
+    </div>
+  </div>
+  <div class="con_fam">
+    <img src="images/title_sdw.png" alt="타이틀 배경" class="sdw_top">
+    <h2>Kitsune&#769; Group</h2>
+    <img src="images/title_sdw.png" alt="타이틀 배경" class="sdw_bottom">
+    <div class="inner">
+      <ul>
+        <li class="cafe">
+          <div class="text">
+            <img src="images/logo_ck.png" alt="cafe kitsune paris" class="logo">
+            <div>
+              <p>THE ART OF COFFEE</p>
+              <p>The concept behind Café Kitsune&#769; is to create and operate a space that marries the simplistic beauty of the small and intimate coffee bars with the style and cool of everything that Café Kitsune&#769; undertakes. Café Kitsune&#769; pays tribute to the pleasure of enjoying a quality coffee in locations that are both modern, cosmopolitan and welcoming.</p>
+            </div>
+          </div>
+          <img src="images/cafe_kitsune.png" alt="카페 키츠네 이미지">
+        </li>
+        <li class="galerie">
+          <img src="images/galerie_kitsune.png" alt="갤러리 키츠네 이미지">
+          <div class="text">
+            <img src="images/logo_gk.svg" alt="galerie kitsune" class="logo">
+            <div>Galerie Kitsune&#769; is the natural next step in continuing to build upon our engagement with innovative creators of our time shares Gildas Loae&#769;c, co&hyphen;founder of Kitsune&#769;. Collaborations have been at the core of Kitsune&#769; since we created the brand in Paris back in 2002. Throughout the years, we&rsquo;ve collaborated with not only brands but also visual artists of different profiles and backgrounds illustrators, photographers, videographers, graphic artists, painters… from up&hyphen;and&hyphen;coming to more established ones.</div>
+          </div>
+        </li>
+        <li class="musique">
+          <div class="text">
+            <img src="images/logo_km.svg" alt="kitsune musique" class="logo">
+            <div>
+              <p>Kitsune&#769; Musique, the first home for<br>up&hyphen;and&hyphen;coming artists today unmissable.</p>
+              <p>Where music, events, design, bands & DJs, and more meet. Kitsune&#769; Musique aims to adhere to the initial ethos of discovering new music through a unique experience, whether it&rsquo;s with a single release mixing the worlds of music and design or attending a Kitsune&#769; Afterwork in Seoul or Los Angeles to discover up&hyphen;and&hyphen;coming artists.</p>
+            </div>
+          </div>
+          <img src="images/kitsune_musique.png" alt="키츠네 뮤직 이미지">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<footer id="footer">
+<div class="inner">
+  <div class="sitemap">
+    <h2 class="blind">사이트맵</h2>
+    <ul>
+      <li class="sm_main">
+        <h3>고객 서비스</h3>
+        <ul class="sm_sub">
+          <li><a href="#">주문 조회하기</a></li>
+          <li><a href="#">배송 조회하기</a></li>
+          <li><a href="#">반품하기</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">사이즈 가이드</a></li>
+          <li><a href="#">1:1 문의하기</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>메종키츠네</h3>
+        <ul class="sm_sub">
+          <li><a href="#">매장 찾기</a></li>
+          <li><a href="#">카페 키츠네</a></li>
+          <li><a href="#">커리어</a></li>
+          <li><a href="#">프랜차이즈 문의</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>이용 안내</h3>
+        <ul class="sm_sub">
+          <li><a href="#">법률 정보</a></li>
+          <li><a href="#">메종키츠네 이용 약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>언어(Language)</h3>
+        <form action="#">
+          <fieldset>
+            <legend class="blind">언어 선택</legend>
+            <label for="lang" class="blind">언어 선택</label>
+            <select id="lang" class="lang_choice"> <!-- 1개만 선택할 수 있는 목록 -->
+              <option>Korean</option>
+              <option>English</option>
+            </select>
+          </fieldset>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="copyright">
+    <h2 class="blind">저작권&comma; SNS</h2>
+    <p>&copy; Maison Kitsune&#769; All Reserved 2023</p>
+    <ul>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="인스타그램"></a></li>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2168/2168336.png" alt="트위터"></a></li>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2168/2168281.png" alt="페이스북"></a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="information_pop">
+  <a href="#" class="pop_exit"><span class="material-symbols-outlined">close</span></a>
+  <p class="pop_text">
+    GNB의 <b>&lsquo;여성&rsquo;</b> 메뉴와<br>
+    컨텐츠 중간의 <b>&lsquo;HOLIDAY Gift Guide&rsquo;</b> 배너의 <b>더보기 버튼</b>을 클릭하시면<br>
+    <b>서브페이지</b>를 보실 수 있습니다.
+  </p>
+</div>
+
+<script src="js/smoothGall.js"></script>
+
+</body>
+</html>
