@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>AQUA DE PARMA</title>
+<style>
+/* Reset */
+html,body { height:100%; }
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input { margin:0; padding:0; }
+h1,h2,h3,h4 { font-size:12px; }
+ul,li,ol { list-style:none; }
+img,fieldset,iframe { border:0; }
+img { vertical-align:top; }
+table { border-collapse:collapse; }
+a {text-decoration:none; color:#111;}
+input { margin:0; padding:0; }
+
+/* Base */
+@font-face { 
+  font-family:'Bodoni';
+  src: local(Bodoni); 
+	src: url('fonts/Bodoni.woff') format('woff');
+} @font-face { 
+  font-family:'Bodoni bd';
+  src: local(Bodoni Bd BT); 
+	src: url('fonts/Bodoni_Bold.woff') format('woff');
+} @font-face { 
+  font-family:'Futura md';
+  src: local(FutuMd__); 
+	src: url('fonts/FutuMd__.woff') format('woff');
+} @font-face { 
+  font-family:'Futura bd';
+  src: local(FutuBd__); 
+	src: url('fonts/FutuBd__.woff') format('woff');
+} @font-face { 
+  font-family:'Futura lt';
+  src: local(FutuLt__); 
+	src: url('fonts/FutuLt__.woff') format('woff');
+}
+body { font-family:'Bodoni','Futura'; font-size:12px; color:#111; line-height:100%; }
+.blind {position:absolute; left:0; top:-99999px;}
+
+/* layout */
+#wrap {margin:0 auto; width:1200px;}
+#container1 {display:flex; justify-content:space-between;}
+#container2 {display:flex; justify-content:space-between;}
+#footer {font:13px 'futura lt'; background:#ddd; height:50px;}
+
+/* Header */
+#header:after{content:""; display:block; clear:both;}
+#header h1 {float:left; width:300px; height:400px;}
+#header .gnb {float:left; position:relative; width:900px; height:100px; background:white; font:13px 'Futura md'; text-transform:uppercase;}
+#header .gnb ul {position:absolute; right:0px; top:calc(50% - 14px/2); width:580px; display:flex; justify-content:space-between; margin-right:30px;}
+#header .pt1 {float:left;}
+#header .story {position:relative; float:left; background:#e9e9e9; width:300px; height:300px; padding:40px; box-sizing:border-box;}
+#header .story h2 {font:35px 'Bodoni Bd BT'; text-align:center; margin:0 auto; position:relative; text-transform:uppercase; margin:0px 0 30px 0; z-index:2;}
+#header .story div {width:264px; height:33px; background:#ffb500; position:absolute; right:57px; top:55px; z-index:1;}
+#header .story p {font:13px 'Futura md'; text-align:center;}
+
+/* Container */
+#container1 .signiture {width:600px; height:300px; background:url(images/signiture.jpg) no-repeat center top;}
+#container1 .signiture .sig_inner {margin:80px 0; text-align:center;}
+#container1 .signiture h2 {font:italic 50px 'Bodoni'; line-height:80%; text-transform:uppercase; margin-bottom:25px;}
+#container1 .signiture .more {
+  font:11px 'Futura md'; line-height:30px; text-transform:uppercase; letter-spacing:0.2em;
+  width:140px; height:30px; background:#111; color:white; border-radius:3px;
+  position:relative; left:calc(50% - 140px/2); bottom:0px; 
+}
+#container1 .search_inner {position:relative; background:#e9e9e9; width:300px; height:300px; padding:40px; box-sizing:border-box;}
+#container1 .search_inner .wrap {position:absolute; left:calc(50% - 198px/2 ); top:calc(50% - 40px/2);}
+#container1 #search_text { 
+  width:175px; height:40px; outline:none; background:none;
+  border:0; border-bottom:2px solid #111; box-sizing:border-box; 
+}
+#container1 .search_inner .icon {width:23px; height:23px; border:0; margin-top:10px;}
+#container1 .search_inner input {float:left;}
+  /* 
+  검색칸과 버튼 사이의 공백, 높이 어긋남 해걸 :
+  inline요소에게 float 설정하면 block 요소가 되면서 가로 배열된다. 
+  */
+
+#container2 {position:relative; width:1200px; height:600px;}
+#container2 .pt3 {width:900px; height:600px;}
+#container2 .sns {position:absolute; left:900px; top:0px; width:300px; height:300px;}
+#container2 .value {position:relative; left:0px; top:300px; width:300px; height:300px; text-align:center;
+  background:url(images/value.jpg) no-repeat center top; background-size:cover;}
+.value h2 {color:white; font: 35px 'Bodoni Bd BT'; text-transform:uppercase; margin:30px 0;}
+.value ul {position:absolute; left:0px; bottom:0px;}
+.value ul li {position:relative; color:white; font: 14px 'Futura bd'; text-transform:uppercase;}
+.value ul li p {width:300px; height:70px; display:table-cell; vertical-align:middle;}
+.value ul li .v1 {text-align:left; padding-left:165px; background:url(images/sl1.jpg) no-repeat center top; background-size:cover;}
+.value ul li .v2 {text-align:right; padding-right:165px; background:url(images/sl2.jpg) no-repeat center top; background-size:cover;}
+.value ul li .v3 {text-align:left; padding-left:165px; background:url(images/sl3.jpg) no-repeat center top; background-size:cover;}
+
+/* Footer */
+#footer {text-align:center; background:white;}
+#footer p {line-height:50px; text-transform:uppercase;}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+<header id="header">
+  <div class="inner">
+  <h1><a href="#"><img src="images/logo.jpg" alt="ACQUA DI PARMA"></a></h1>
+  <nav class="gnb">
+    <ul>
+      <li><a href="#">fragrances</a></li>
+      <li><a href="#">body collection</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">gifting</a></li>
+      <li><a href="#">holiday exclusives</a></li>
+    </ul>
+  </nav>
+  <a href="#"><img src="images/pt1.jpg" alt="아쿠아 디 파르마 디퓨저 이미지" class="pt1"></a>
+  <a href="#"><div class="story">
+    <h2>our story</h2><div></div>
+    <p>Created in 1916 by the baron Carlo Magnani from Parma as his own personal Colonia,
+    Acqua di Parma today is a symbol of Italian sophistication, discreet luxury, and craftsmanship that is inspired by its heritage and yet constantly evolving to always stay relevant and meaningful</p>
+  </div></a>
+  </div>
+</header>
+
+<section id="container1">
+  <div class="signiture">
+    <div class="sig_inner">
+    <a href="#"><h2>signiture<br>fragrances</h2></a>
+    <a href="#"><div class="more">learn more</div></a>
+    </div>
+  </div>
+  <div class="search_inner">
+    <div class="wrap">
+    <form action="#">
+      <fieldset>
+        <legend class="blind">통합검색</legend>
+        <label for="search_text" class="blind">검색어 입력</label>
+        <input type="text" id="search_text">
+        <input type="image" src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png" alr="검색" class="icon">
+      </fieldset>
+    </form>
+    </div>
+  </div>
+  <a href="#"><div class="pt2"><img src="images/pt2.jpg" alt="아쿠아 디 파르마 향수 이미지"></div></a>
+</section>
+
+<section id="container2">
+  <div class="pt3"><img src="images/pt3.jpg" alt="아쿠아 디 파르마 제품 이미지"></div>
+  <div class="sns">
+    <img src="images/sns.jpg" alt="SNS 인스타그램, 페이스북, 트위터, 유튜브" usemap="#sns">
+    <map name="sns">
+      <area shape="rect" coords="0,0,148,150" href="https://www.instagram.com/acquadiparma_official/" target="_blank" alt="인스타그램" />
+      <area shape="rect" coords="149,0,298,149" href="https://www.facebook.com/acquadiparma" target="_blank" alt="페이스북" />
+      <area shape="rect" coords="0,151,149,299" href="#" target="_top" alt="트위터" />
+      <area shape="rect" coords="150,150,299,299" href="#" target="_top" alt="유튜브" />
+    </map>
+  </div>
+  <div class="value">
+    <h2>our value</h2>
+    <ul>
+    <a href="#"><li><p class="v1">REFLECTING<br>NATURE</p></li></a>
+    <a href="#"><li><p class="v2">CELEBRATING<br>ITALIAN STYLE</p></li></a>
+    <a href="#"><li><p class="v3">PERPETUATING<br>CRAFTMANSHIP</p></li></a>
+    </ul>
+  </div></a>
+</section>
+
+<footer id="footer">
+  <p>&copy; ACQUA DI PARMA 2022 All Rights Reserved</p>
+</footer>
+
+</div>
+</body>
+</html>
