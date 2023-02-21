@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>디스이즈네버댓 thisisneverthat</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/default.js"></script>
+
+<style>
+form {width:100%;}
+fieldset {border:0;}
+input, select {margin:0px; padding:0px; outline:none; border:0; color:white}
+
+h2 {font-size:24px; margin:40px 0 30px 0; text-align:center;}
+.star {font-size:10px; text-align:right; color:#ff26a2;}
+.in {padding:30px 0px 15px 0px; background:none; border-bottom:1px solid #444; width:100%}
+.terms_btn {border:1px solid white; width:100%; height:50px; text-align:center; line-height:50px; margin:60px 0 30px 0;}
+.terms {display:block; height:40px;}
+.terms_s {font-weight:light; font-size:10px;}
+.terms_l {font-weight:light; font-size:14px;}
+.join_join_btn {background:#31ff26; width:100%; height:50px; text-align:center; line-height:50px; margin:15px 0 60px 0; color:#111; font-weight:bold;}
+
+</style>
+
+</head>
+<body>
+<div id="wrap">
+  <div id="inner">
+    <header id="header">
+      <div class="ham">
+        <div></div> <div></div> <div></div>
+      </div>
+      <a href="#"><img src="images/thisisneverthat.png" alt="thisisneverthat" class="logo"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/711/711897.png" alt="장바구니" class="cart"></a>
+    </header>
+    <section class="c_inner">
+      <h2>회원가입</h2>
+      <p class="star">*표시는 필수 입력 항목입니다.</p>
+      <form action="#" id="join">
+        <fieldset>
+          <legend class="blind">회원가입</legend>
+          <p>
+            <label for="f1" class="blind">이름</label>
+            <input type="text" placeholder="&ast; Name" id="f1" class="in">
+          </p>
+            
+          <p>
+            <label for="f2" class="blind">휴대전화</label>
+            <input type="tel" placeholder="&ast; Tel &nbsp;&nbsp;&nbsp;&nbsp; &hyphen;표시 없이 입력해주세요" id="f2" class="in">
+          </p>
+          
+          <p>
+            <label for="f3" class="blind">아이디</label>
+            <input type="text" placeholder="&ast; ID " id="f3" class="in">
+          </p>
+
+          <p>
+            <label for="f4" class="blind">비밀번호</label>
+            <input type="password" placeholder="&ast; Password &nbsp;&nbsp;&nbsp;&nbsp; 영문, 숫자를 포함한 6~12글자" id="f4" class="in">
+          </p>
+
+          <a href="#"><p class="terms_btn">약관 전체 동의</p></a>
+
+          <p>
+            <a href="#" class="terms"><input type="checkbox" id="f5"> <span class="terms_s">&lpar;필수&rpar;</span> <label for="f5" class="terms_l">thisisneverthat 이용 약관 동의</label></a>
+            <a href="#" class="terms"><input type="checkbox" id="f6"> <span class="terms_s">&lpar;필수&rpar;</span> <label for="f6" class="terms_l">개인정보처리방침 동의</label></a>
+            <a href="#" class="terms"><input type="checkbox" id="f7"> <span class="terms_s">&lpar;필수&rpar;</span> <label for="f7" class="terms_l">개인정보 제3자 제공 동의</label></a>
+            <a href="#" class="terms"><input type="checkbox" id="f8"> <span class="terms_s">&lpar;선택&rpar;</span> <label for="f8" class="terms_l">이벤트 · 혜택 정보 수신 동의</label></a>
+          </p>
+
+          <a href="#"><p class="join_join_btn">Join</p></a>
+        </fieldset>
+
+      </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>&copy; 2022 <img src="images/thisisneverthat.png" alt="thisisneverthat" id="f_logo"></p>
+    </footer>
+    
+  <div id="gnb_wrap">
+    <nav id="gnb">
+      <ul>
+        <li class="main shop">
+          <a href="#">Shop <span><div class="plus_col"></div> <div class="plus_row"></div></span></a>
+          <ul class="sub">
+            <a href="#"><li class="s_new">New</li></a>
+            <a href="#"><li class="s_col">Collaboration</li></a>
+            <a href="#"><li>All</li></a>
+            <a href="#"><li>Outwears</li></a>
+            <a href="#"><li>Tops</li></a>
+            <a href="#"><li>Bottoms</li></a>
+            <a href="#"><li>Headwears</li></a>
+            <a href="#"><li>Bags</li></a>
+            <a href="#"><li>Shoes</li></a>
+            <a href="#"><li>Ect.</li></a>
+          </ul>
+        </li>
+        <a href="#"><li class="main">Features <span>&gt;</span></li></a>
+        <a href="#"><li class="main">Top 20 <span>&gt;</span></li></a>
+        <a href="#"><li class="main">MD&rsquo;s Pick <span>&gt;</span></li></a>
+      </ul>
+      <div class="btn">
+        <a href="#" class="gnb_join_btn">회원가입</a>
+        <a href="#" class="gnb_login_btn">로그인</a>
+      </div>
+      <div id="gnb_footer">
+        <table class="gnb_cc">
+          <caption>고객센터</caption>
+          <tbody>
+          <tr><td class="fst"><a href="#">+82(0)70&ndash;4048&ndash;5375</a></td></tr>
+          <tr><td>평일 오전 9시 ~ 오후 5시<br>(주말 및 공휴일 휴무)</td></tr>
+          </tbody>
+        </table>
+        <table class="gnb_cs">
+          <caption>고객지원</caption>
+          <tbody>
+          <tr><td class="fst"><a href="#">1:1 문의하기</a></td><td class="fst"><a href="#">교환·환불 규정</a></td></tr>
+          <tr><td><a href="#">배송조회</a></td><td><a href="#">이용약관</a></td></tr>
+          <tr><td><a href="#">매장 찾기</a></td><td><a href="#">개인정보처리방침</a></td></tr>
+          <colgroup>
+            <col style="width:50%;">
+            <col style="width:50%;">
+          </colgroup>
+          </tbody>
+        </table>
+      </div>
+    </nav>
+  </div>
+  </div>
+</div>
+</body>
+</html>

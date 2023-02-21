@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>작품설명 &hyphen; 명함</title>
+<!-- 구글 웹폰트 http://fonts.google.com -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- 구글 웹아이콘 https://fonts.google.com/icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- 아이온 웹아이콘 http://ionicons.com/v2 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- 어썸폰트 웹아이콘 -->
+<script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+
+<!-- 본문 서체 -->
+<link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+
+<!-- 글꼴 소개 서체 -->
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="../css/works_common.css">
+
+<style>
+  /* 타이틀 배경 */
+.title_area {width:100%; height:500px; background:url(../../images/thumbnail/namecard.jpg) center bottom no-repeat; background-attachment:fixed; background-size:cover;}
+
+  /* Fonts */
+.f1 {font:24px 'Comfortaa';}
+.f2 {font:24px 'Noto Sans KR';}
+
+  /* Colors */
+.c1 {background:#4D65FF;}
+.c2 {background:#91A3FF;}
+.c3 {background:#B6FFF9;/* border:1px solid #ccc; box-sizing:border-box;*/}
+
+  /* 상세 설정 */
+.mockup {width:100%;}
+#detail .inner {margin:200px auto;}
+#detail .inner::after {display:block; content:""; clear:both;}
+.namecard_img {filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.15));}
+.namecard_img.front {float:left;}
+.namecard_img.back {float:right; margin-top:400px; margin-bottom:100px;}
+</style>
+</head>
+<body>
+<section id="intro">
+  <div class="title_area">
+    <div class="main">
+      <p class="title">명함 &lpar;Namecard&rpar;</p>
+      <p class="category">Logo Design</p>
+    </div>
+  </div>
+  <div class="info">
+    <div class="inner">
+      <div class="introduce">
+        영문 이름의 첫 글자인 &lsquo;J&rsquo;를 사용하여 가상의 브랜드 로고와 명함을 디자인했습니다.<br>
+        <b>유연함</b>을 나타내기 위해 둥근 도형이 부드럽게 꺾인 모습을 표현하였고&comma;<br>
+        보라색이 섞인 파란색을 메인으로 하여 <b>신뢰감</b>을 나타내고&comma;<br>
+        형광빛이 도는 민트색을 부분적으로 사용하여 <b>창의적인 느낌</b>과 <b>생기발랄함</b>을 더했습니다. 
+      </div>
+      <ul class="source">
+        <li>
+          <div>프로젝트 구분 <span class="source_small">contribution</span></div>
+          <p>개인 작품</p>
+          <p>기여도 100&percnt;</p>
+        </li>
+        <li>
+          <div>글꼴 <span class="source_small">font</span></div>
+          <p class="font f1">Comfortaa</p>
+          <p class="font f2">Noto Sans KR</p>
+        </li>
+        <li>
+          <div>주조색 <span class="source_small">main color</span></div>
+          <span class="colors c1"></span><span class="colors c2"></span><span class="colors c3"></span>
+        </li>
+        <li>
+          <div>사용 프로그램 <span class="source_small">tools</span></div>
+          <p>Illustrator</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="visual">
+  <img src="images/namecard_mockup.jpg" alt="명함 목업 이미지" class="mockup_img">
+</section>
+<section id="detail">
+  <div class="inner">
+    <h3>detailed images</h3>
+    <img src="images/namecard_front.jpg" alt="명함 로고 면" class="namecard_img front">
+    <img src="images/namecard_back.jpg" alt="명함 정보 면" class="namecard_img back">
+  </div>
+</section>
+<a href="#" onclick="window.close(); return false;"><span class="material-symbols-outlined" id="exit">close</span></a>
+<footer id="footer">
+<div>Jinny Kim &copy; 2023 All rights Reserved</div>
+</footer>
+</body>
+</html>

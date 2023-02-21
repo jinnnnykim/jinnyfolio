@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>작품설명 &hyphen; 배경화면</title>
+<!-- 구글 웹폰트 http://fonts.google.com -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- 구글 웹아이콘 https://fonts.google.com/icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- 아이온 웹아이콘 http://ionicons.com/v2 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- 어썸폰트 웹아이콘 -->
+<script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+
+<!-- 본문 서체 -->
+<link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&display=swap" rel="stylesheet">
+
+<!-- 글꼴 소개 서체 -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="../css/works_common.css">
+
+<style>
+  /* 글꼴 소개 서체 */
+@font-face { 
+font-family:'impact'; 
+src: url('fonts/impact.woff') format('woff'); 
+}
+  /* 타이틀 배경 */
+.title_area {width:100%; height:500px; background:url(../../images/thumbnail/wallpaper2.jpg) center bottom no-repeat; background-attachment:fixed; background-size:cover;}
+
+  /* Colors */
+.c1 {background:#3e5ed3;}
+.c2 {background:#dd7be1;}
+.c3 {background:#ed5588; /*border:1px solid #ccc; box-sizing:border-box;*/}
+
+  /* 상세 설정 */
+#detail .detail_img {width:800px; margin:0 auto;}
+#detail .used {width:300px; margin-bottom:20px;}
+#detail .used_img {margin-bottom:200px;}
+</style>
+</head>
+<body>
+<section id="intro">
+  <div class="title_area">
+    <div class="main">
+      <p class="title">모바일 배경화면 &lpar;Mobile Wallpaper&rpar;</p>
+      <p class="category">Graphic Design</p>
+    </div>
+  </div>
+  <div class="info">
+    <div class="inner">
+      <div class="introduce">
+        여러 이미지를 <b>합성</b>하고 전체적으로 색상&comma; 명도&comma; 채도를 조절하여 자연스럽게 <b>보정</b>해 스마트폰 배경화면을 제작했습니다.<br>
+        <b>꽃밭</b>에서 <b>수영</b>하는 모습으로 봄과 여름 사이의 <b>청량함</b>과 <b>활발함</b>을 표현하였고<br>
+        그와 <b>대조</b>되는 분위기의 노을지기 시작하는 하늘과 <b>태양</b>이미지를 배치하여 <b>몽환적</b>이고 <b>비현실적</b>인 분위기로 디자인하였습니다.
+      </div>
+      <ul class="source">
+        <li>
+          <div>프로젝트 구분 <span class="source_small">contribution</span></div>
+          <p>개인 작품</p>
+          <p>기여도 100&percnt;</p>
+        </li>
+        <li>
+          <div>주조색 <span class="source_small">main color</span></div>
+          <span class="colors c1"></span><span class="colors c2"></span><span class="colors c3"></span>
+        </li>
+        <li>
+          <div>사용 프로그램 <span class="source_small">tools</span></div>
+          <p>Photoshop</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="visual">
+  <img src="images/wallpaper2_mockup.jpg" alt="스마트폰 배경화면 목업 이미지" class="mockup_img">
+</section>
+<section id="detail">
+  <div class="inner">
+    <h3>detailed images</h3>
+    <img src="images/wallpaper2.jpg" alt="배경화면 이미지" class="detail_img">
+    <h3>Reference images</h3>
+    <div class="used_img">
+      <img src="images/wallpaper2/man-swimming.webp" alt="수영하는 사람" class="used">
+      <img src="images/wallpaper2/flower.jpg" alt="꽃" class="used">
+      <img src="images/wallpaper2/flowers.jpg" alt="꽃밭" class="used">
+      <img src="images/wallpaper2/sky.jpg" alt="하늘" class="used">
+      <img src="images/wallpaper2/cloud.png" alt="구름" class="used">
+      <img src="images/wallpaper2/burds.jpg" alt="새" class="used">
+    </div>
+  </div>
+</section>
+<a href="#" onclick="window.close(); return false;"><span class="material-symbols-outlined" id="exit">close</span></a>
+<footer id="footer">
+<div>Jinny Kim &copy; 2023 All rights Reserved</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@font-face {font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal; font-style: normal;}
+
+  /* Reset CSS */
+* {margin:0; padding:0;}
+html, body {height:100%;}
+a {text-decoration:none; color:white;}
+li {list-style:none;}
+img {vertical-align: top; border:0;}
+h1,h2,h3,h4,h5,h6 {font-size:10px;}
+.blind {position:absolute; left:0px; top:-99999px;}
+
+  /* Base */
+body {font-family:'Roboto','NanumSquareNeo-Variable'; color:white; -webkit-text-size-adjust:none; background:#111;}
+/* #wrap {padding-left:12px; padding-right:12px; box-sizing:border-box;} */
+
+  /* Layout */
+#header {width:100%; margin:0 auto; background:#111;}
+
+  /* Header */
+#header {position:relative; height:60px; display:flex; justify-content:space-between; flex-wrap:wrap;}
+#header .ham {position:absolute; left:12px; top:calc(50% - 17px/2); z-index:1000; width:18px; height:17px; cursor:pointer;}
+.ham div {position:absolute; width:100%; height:1px; background:white; transition:0.3s;}
+.ham div:nth-child(1){left:0; top:0px;}
+.ham div:nth-child(2){left:0; top:8px;}
+.ham div:nth-child(3){left:0; top:16px;}
+#header .logo {position:absolute; left:calc(50% - 143px/2); top:calc(50% - 15px/2); z-index:1000; width:143px; height:15px;}
+#header .cart {position:absolute; right:12px; top:calc(50% - 20px/2); z-index:1000; width:20px; filter:invert(100%);}
+
+  /* GNB */
+#gnb_wrap {position:absolute; left:0px; top:0px; z-index:100; background:#111; width:100%;}
+
+#gnb {padding:0 12px;}
+#gnb .main {font:500 28px 'Roboto'; padding:30px 0px 20px 20px; border-bottom:1px solid white; box-sizing:border-box;}
+#gnb .main span {margin-right:20px; float:right;}
+#gnb .main.shop {margin-top:70px;}
+#gnb .main.shop span {position:relative; width:15px; height:34px;}
+#gnb .main.shop span div {position:absolute; background:white; transition:0.5s;}
+#gnb .main.shop span .plus_col {left:calc(50% - 3px/2); top:calc(50% - 15px/2); width:3px; height:15px;}
+#gnb .main.shop span .plus_row {left:0; top:calc(50% - 3px/2); width:15px; height:3px;}
+#gnb .sub {font:500 24px 'Roboto';}
+#gnb .sub li {margin:10px 0px;}
+#gnb .sub .s_new {color:#ff26a2; padding-top:10px;}
+#gnb .sub .s_col {color:#31ff26}
+
+#gnb .btn {display:flex; justify-content:space-between; width:100%; margin:50px 0;}
+#gnb .btn a {width:45%; height:50px; text-align:center; line-height:50px;}
+#gnb .gnb_join_btn {background:#111; color:white; border:1px solid white; box-sizing:border-box;}
+#gnb .gnb_login_btn {background:white; color:#111;}
+
+#gnb_footer{margin:0px 32px; padding-bottom:50px;}
+#gnb_footer table {width:100%; font-family: 'NanumSquareNeo-Variable';}
+#gnb_footer table a {color:#888;}
+#gnb_footer caption {font-weight:bold; font-size:16px; padding-bottom:20px; color:#888; border-bottom:1px solid #888; text-align:left;}
+#gnb_footer td {font-weight:light; font-size:14px; color:#888; padding:8px 0;}
+#gnb_footer .fst {padding:19px 0px 8px 0px; /*border:1px dashed yellow;*/}
+#gnb_footer .gnb_cs {margin-top:40px;}
+
+  /* Footer */
+#footer {font:12px 'Roboto'; color:white; background:black; padding:20px 0px; display:flex; justify-content:center;}
+#f_logo {height:11px; margin-left:5px;}
+
