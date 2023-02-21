@@ -1,0 +1,119 @@
+/* Reset */
+html,body {height:100%;}
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input {margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:12px;}
+ul,li,ol {list-style:none;}
+a {text-decoration:none;}
+img,fieldset,iframe {border:0;}
+img {vertical-align:top;}
+table {border-collapse:collapse;}
+  /*
+  [CSS 작성 순서]
+  1. 레이아웃 : 표시, 넘침, 흐름, 위치, 크기, 간격
+  2. 디자인 : 테두리, 배경
+  3. 텍스트 : 폰트
+  4. 동작 - 기타
+  */
+
+  /* Base */
+body {overflow:hidden/*스크롤바없앰*/; background:#111; font:16px 'SUIT'; color:white;}
+a {color:white;}
+.blind {position:absolute; left:0; top:-200%;}
+
+  /* Layout */
+#header {position:fixed; right:80px; top:80px; width:20%; min-width:300px;}
+#footer {position:fixed; right:80px; bottom:80px; width:20%; min-width:300px;}
+#contents {width:100%; height:100%;}
+#home {width:100vw; height:100vh;}
+#works {width:100vw; height:100vh;}
+#about {width:100vw; height:100vh;}
+#contact {width:100vw; height:100vh;}
+
+  /* Home */
+#home {margin:0 auto; text-align:center;}
+#home .main {margin:0 auto; width:50%;}
+.m_logo {margin-top:15%; width:27%;}
+.m_title {margin:100px 0 105px 0; font-size:3rem; font-weight:900;}
+.m_slogan {display:flex; justify-content:space-between; margin:0 auto; width:360px; color:#b6fff9; font-size:22px; font-weight:100;}
+.m_slogan .line {margin-top:16px; width:45%; height:1px; background:#b6fff9;}
+
+  /* Header */
+#header {overflow:hidden; padding-left:80px; box-sizing:border-box; transition:0.2s;}
+.gnb {display:flex; justify-content:space-between; transition:0.5s; text-transform:uppercase;}
+.gnb .more {color:white; cursor:pointer; transition:0.3s; font-weight:800}
+.gnb .more:hover {color:#b6fff9;}
+.gnb .more .line {width:1px; height:40px; margin:10px auto; background:white;}
+
+  /* Footer */
+#footer {overflow:hidden; padding-left:80px; box-sizing:border-box; transition:0.2s;}
+.logo_text {width:100%; text-align:right;}
+.s_logo {margin-bottom:40px; width:92px; cursor:pointer;}
+.s_slogan {display:flex; justify-content:space-between; color:#b6fff9; font-size:22px; font-weight:100;}
+.s_slogan .line {margin-top:16px; width:45%; height:1px; background:#b6fff9;}
+
+  /* Works */
+#works .contents_area {position:relative; width:80%; height:100%; padding:80px; box-sizing:border-box;}
+.arraw .next {position:absolute; right:100px; top:calc(50% - 12px); cursor:pointer;}
+.arraw .prev {position:absolute; left:100px; top:calc(50% - 12px); cursor:pointer;}
+.thumb_mask {position:relative; width:100%; height:100%; overflow:hidden;}
+.gall {position:absolute; left:0px; top:0px; width:99999px;}
+.gall .thumbnail {position:relative; overflow:hidden; width:100%;}
+.gall .name {position:absolute; left:0px; top:0px; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:100%;}
+.gall .name img {margin-bottom:50px; width:700px; filter:invert(1);}
+.gall ul li {float:left;}
+.more_btn {display:block; transition:.5s; margin:0 auto; width:200px; height:50px; color:white; border:2px solid white; border-radius:30px; font-size:20px; font-weight:600; line-height:50px; text-align:center;}
+
+/* About */
+#about .contents_area {width:80%; height:100%; padding:80px; box-sizing:border-box;}
+#about .contents_area .personal>div {width:33.33%;}
+.title {display:flex; align-items:baseline; margin-bottom:60px;}
+.title img {width:150px;}
+.title h2 {font-size:80px; font-weight:900; text-transform:uppercase; font-style:italic;}
+.personal {display:flex; justify-content:space-between;}
+.personal caption, .personal h4 {padding-left:30px; border-left:10px solid #b6fff9; text-align:left;}
+.personal tr {height:50px;}
+.personal caption {margin-bottom:40px; color:#b6fff9; font-size:24px; font-weight:600; text-transform:uppercase;}
+.personal th {width:100px; color:#b6fff9; font-size:16px; font-weight:200; text-align:left; vertical-align:text-bottom;}
+.personal td {font-size:18px; font-weight:600; vertical-align:text-bottom;}
+#about div.mbti {width:220px;}
+.mbti h4 {width:220px; margin-bottom:40px; color:#b6fff9; font-size:24px; font-weight:600; text-transform:uppercase;}
+.mbti ul {width:220px; height:400px; display:flex; flex-direction:column; justify-content:space-between;}
+.mbti li {display:flex; flex-wrap:wrap; justify-content:space-between; width:220px;}
+.mbti .bar {margin:5px 0; width:220px; height:10px; border:2px solid white; border-radius:10px; padding:2px; }
+.mbti .percent {float:right; height:100%; border-radius:10px; background:#b6fff9;}
+.mbti .percent.p1 {width:64%;}
+.mbti .percent.p2 {width:53%;}
+.mbti .percent.p3 {width:60%;}
+.mbti .percent.p4 {width:61%; float:none;}
+.mbti .my_mbti {font-weight:600; color:#b6fff9;}
+.mbti li p {width:100%; font-weight:600; color:#b6fff9; text-align:center;}
+.tmi tr {height:32px; vertical-align:text-bottom;}
+.tmi th {width:120px; vertical-align:text-bottom;}
+
+/* Contact */
+#contact .contents_area {width:80%; height:100%; padding:80px; box-sizing:border-box;}
+#contact .contact_wrap {display:flex; justify-content:space-between; }
+#contact .contact_wrap>div {width:33.33%;}
+.contact_wrap caption, .contact_wrap h4 {padding-left:30px; border-left:10px solid #b6fff9; text-align:left;}
+.contact_info tr {height:40px;}
+.contact_info caption {margin-bottom:40px; color:#b6fff9; font-size:24px; font-weight:600; text-transform:uppercase;}
+.contact_info th {width:100px; color:#b6fff9; font-size:16px; font-weight:200; text-align:left;}
+.contact_info td {font-size:18px; font-weight:600;}
+.skills h4 {margin-bottom:40px; color:#b6fff9; font-size:24px; font-weight:600; text-transform:uppercase; /*text-align:center;*/}
+.skills ul {height:400px; display:flex; flex-direction:column; justify-content:flex-start;}
+.skills li {width:220px; margin-bottom:40px;}
+.skills li p {width:100%; font-weight:600; text-align:left;}
+.skills.de li p {text-transform:uppercase;}
+.skills .bar {margin:5px 0; width:220px; height:10px; border:2px solid white; border-radius:10px; padding:2px;}
+.skills .percent {height:100%; border-radius:10px; background:#b6fff9;}
+.skills.pu .percent.p1 {width:80%;}
+.skills.pu .percent.p2 {width:80%;}
+.skills.pu .percent.p3 {width:50%;}
+.skills.pu .percent.p4 {width:65%;}
+.skills.de .percent.p1 {width:90%;}
+.skills.de .percent.p2 {width:95%;}
+.skills.de .percent.p3 {width:70%;}
+.skills.de .percent.p4 {width:80%;}
+
+.photo {width:240px; height:500px; overflow:hidden;}
+.photo img {width:auto; height:100%;}
