@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHARLES&amp;KEITH</title>
+<!-- 구글 웹폰트 http://fonts.google.com -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- 구글 웹아이콘 https://fonts.google.com/icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!-- 아이온 웹아이콘 http://ionicons.com/v2 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- 어썸폰트 웹아이콘 -->
+<script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
+<!-- 스와이퍼 플러그인 css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){ $('a').click(function(e){ e.preventDefault(); }); });
+
+$(function(){ //gnb 서브메뉴
+  //초기설정
+  $('.sub').hide();
+  $('.gnb_bg').hide();
+
+  $('.gnb').on('mouseenter focusin',()=>{
+    $('.sub').stop().slideDown(500);
+    $('.gnb_bg').stop().slideDown(500);
+  });
+  $('.gnb').on('mouseleave focusout',()=>{
+    $('.sub').stop().slideUp(300);
+    $('.gnb_bg').stop().slideUp(300);
+  });
+});
+
+$(function(){ //magazine 탭메뉴
+  //초기설정
+  $('.m_tab li a').css({ opacity:0.5 });
+  $('.m_tab li:eq(0) a').css({ opacity:1 });
+  $('.m_tab_contents>li').hide();
+  $('.m_tab_contents>li:eq(0)').show();
+
+  $('.m_tab li:eq(0)').click(function(e){
+    e.preventDefault();
+    $('.m_tab li a').css({ opacity:0.5 });
+    $('.m_tab li:eq(0) a').css({ opacity:1 });;
+    $('.m_tab_contents>li').hide();
+    $('.m_tab_contents>li:eq(0)').show();
+  });
+  $('.m_tab li:eq(1)').click(function(e){
+    e.preventDefault();
+    $('.m_tab li a').css({ opacity:0.5 });
+    $('.m_tab li:eq(1) a').css({ opacity:1 });
+    $('.m_tab_contents>li').hide();
+    $('.m_tab_contents>li:eq(1)').show();
+  });
+});
+</script>
+
+<link rel="stylesheet" href="css/default.css">
+
+</head>
+<body>
+<div class="skip_navigation">
+  <a href="#container">본문 바로가기</a>
+  <a href="#footer">하단 바로가기</a>
+</div>
+
+<header id="header">
+  <div class="inner">
+    <div class="h_top_area">
+      <h1><a href="#"><img src="images/charles-and-keith-logo.svg" alt="찰스앤키스 로고"></a></h1>
+      <ul class="util">
+        <li><a href="#"><span class="material-symbols-outlined">search</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">person</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+      </ul>
+    </div>
+    <nav>
+      <ul class="gnb">
+        <li class="main">
+          <a href="#" class="main_menu">세일</a>
+          <ul class="sub">
+            <li><a href="#"><h3 class="sub_top">카테고리 별 세일 상품</h3></a></li>
+            <li><a href="#">슈즈</a></li>
+            <li><a href="#">백</a></li>
+            <li><a href="#">지갑</a></li>
+            <li><a href="#">액세서리</a></li>
+            <li><a href="#"><h3>온라인 전용 할인관</h3></a></li>
+            <li><a href="#">슈즈</a></li>
+            <li><a href="#">백</a></li>
+            <li><a href="#">지갑</a></li>
+            <li><a href="#">액세서리</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#" class="main_menu">신상품</a>
+          <ul class="sub">
+            <li><a href="#"><h3 class="sub_top">카테고리 별 신상품</h3></a></li>
+            <li><a href="#">슈즈</a></li>
+            <li><a href="#">백</a></li>
+            <li><a href="#">지갑</a></li>
+            <li><a href="#">액세서리</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#" class="main_menu">슈즈</a>
+          <ul class="sub">
+            <li><a href="#">슈즈 모두 보기</a></li>
+            <li><a href="#">신상품</a></li>
+            <li><a href="#">펄프스</a></li>
+            <li><a href="#">뮬</a></li>
+            <li><a href="#">로퍼</a></li>
+            <li><a href="#">플랫</a></li>
+            <li><a href="#">웨지</a></li>
+            <li><a href="#">힐</a></li>
+            <li><a href="#">샌들</a></li>
+            <li><a href="#">부츠</a></li>
+            <li><a href="#">스니커즈</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#" class="main_menu">백</a>
+          <ul class="sub">
+            <li><a href="#">백 모두 보기</a></li>
+            <li><a href="#">신상품</a></li>
+            <li><a href="#">핸드백</a></li>
+            <li><a href="#">크로스바디</a></li>
+            <li><a href="#">숄더백</a></li>
+            <li><a href="#">토트백</a></li>
+            <li><a href="#">미니백</a></li>
+            <li><a href="#">클러치</a></li>
+            <li><a href="#">백팩</a></li>
+            <li><a href="#">버킷백</a></li>
+            <li><a href="#">호보백</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#" class="main_menu">지갑</a>
+          <ul class="sub">
+            <li><a href="#">지갑 모두 보기</a></li>
+            <li><a href="#">지갑</a></li>
+            <li><a href="#">롱 월렛</a></li>
+            <li><a href="#">위슬렛&amp;파우치</a></li>
+            <li><a href="#">카드홀더</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#" class="main_menu">액세서리</a>
+          <ul class="sub">
+            <li><a href="#"><h3 class="sub_top">선글라스</h3></a></li>
+            <li><a href="#">에비에이터</a></li>
+            <li><a href="#">라운드</a></li>
+            <li><a href="#">캣&hyphen;아이</a></li>
+            <li><a href="#">스퀘어</a></li>
+            <li><a href="#"><h3>주얼리</h3></a></li>
+            <li><a href="#">귀걸이</a></li>
+            <li><a href="#">팔찌</a></li>
+            <li><a href="#">목걸이</a></li>
+            <li><a href="#">반지</a></li>
+          </ul>
+        </li>
+        <li class="main">
+          <a href="#" class="main_menu">매거진</a>
+          <ul class="sub">
+            <li><a href="#"><h3 class="sub_top">새로운 컬렉션</h3></a></li>
+            <li><a href="#">뉴이어 : 버니 캡슐</a></li>
+            <li><a href="#">2022 가을 겨울 컬렉션</a></li>
+            <li><a href="#">픽사 랏소 컬렉션</a></li>
+            <li><a href="#">ITZY : ITZ MINE 컬렉션</a></li>
+            <li><a href="#">지속 가능 컬렉션</a></li>
+            <li><a href="#"><h3>콜라보레이션</h3></a></li>
+            <li><a href="#"><h3>브랜드 뮤즈</h3></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="gnb_bg"></div>
+    </nav>
+  </div>
+</header>
+
+<div id="visual">
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="images/visual1.jpg" alt="찰스앤키스 x 있지 콜라보"></a></div>
+      <div class="swiper-slide"><a href="#"><img src="images/visual2.jpg" alt="2023 spring summer 에디션"></a></div>
+      <div class="swiper-slide"><a href="#"><img src="images/visual3.jpg" alt="발렌타인데이 컬렉션"></a></div>
+      <div class="swiper-slide"><a href="#"><img src="images/visual4.jpg" alt="찰스앤키스 x 코코캐피탄 콜라보"></a></div>
+    </div>
+    <div class="swiper-button-next swiper-button"></div>
+    <div class="swiper-button-prev swiper-button"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+
+<div id="container">
+    <section id="new">
+      <div class="inner">
+        <h2>
+          신상품<br>
+          <span>new arrival</span>
+        </h2>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/new1.jpg" alt="네즈 퀼티드 박시 백 블랙">
+              <p>네즈 퀼티드 박시 백 &hyphen; 블랙</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/new2.jpg" alt="버니 트위드 숄더 백 핑크">
+              <p>버니 트위드 숄더 백 &hyphen; 핑크</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/new3.jpg" alt="주디 홉스 메탈릭 악센트 메리 제인 블랙">
+              <p>주디 홉스 메탈릭 악센트<br>메리 제인 &hyphen; 블랙</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/new4.jpg" alt="주디 홉스 메탈릭 악센트 백 초크">
+              <p>주디 홉스<br>메탈릭 악센트 백 &hyphen; 초크</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="spotlight">
+      <div class="inner">
+        <h2>
+          스포트라이트<br>
+          <span>spotlight</span>
+        </h2>
+        <ul>
+          <li>
+            <img src="images/sl1.jpg" alt="찰스앤키스 주토피아 컬렉션 이미지">
+            <div>
+              <div>
+                <h3>CHARLES & KEITH &#215; DISNEY ZOOTOPIA</h3>
+                <span>주토피아의 사랑스러운 주디 홉스로 완성된<br>스페셜 컬렉션</span>
+              </div>
+              <a href="#"><div class="btn">스토리 셀렉션 쇼핑하기</div></a>
+            </div>
+          </li>
+          <li>
+            <img src="images/sl2.jpg" alt="새해 룩북 이미지">
+            <div>
+              <div>
+                <h3>새해, 새로운 룩</h3>
+                <span>스타일리시한 디자인의 아이템으로 당신의 룩을 완성해 보세요</span>
+              </div>
+              <a href="#"><div class="btn">에디션 쇼핑하기</div></a>
+            </div>
+          </li>
+          <li>
+            <img src="images/sl3.jpg" alt="찰스앤키스x있지 콜라보레이션 컬렉션 이미지">
+            <div>
+              <div>
+                <h3>As Seen On: ITZY</h3>
+                <span>2022 겨울 컬렉션에서 주목해야 할 아이템</span>
+              </div>
+              <a href="#"><div class="btn">스토리 셀렉션 쇼핑하기</div></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="social">
+      <div class="inner">
+        <h2>
+          소셜 미디어 &amp; 매거진<br>
+          <span>social media &amp; magazine</span>
+        </h2>
+        <div class="youtube">
+          <iframe width="780" height="438" src="https://www.youtube.com/embed/c4LWtOj_3II" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="magazine">
+          <ul class="m_tab">
+            <li><a href="#m_tab1">FASHION</a></li>
+            <li><a href="#m_tab2">PEOPLES</a></li>
+          </ul>
+          <ul class="m_tab_contents">
+            <li id="m_tab1">
+              <ul>
+                <li><a href="#">
+                  <h4>2023 뉴 이어 스타일 가이드</h4>
+                  <p>동양 화풍에서 영감을 받은 붉은 컬러와 아티스틱한 토끼</p>
+                  <span>2022&hyphen;12&hyphen;28</span>
+                </a></li>
+                <li><a href="#">
+                  <h4>트렌딩 나우 : 와일드 웨스트 스타일</h4>
+                  <p>클래식한 웨스턴 룩에 모던한 매력을 더해 투박해 보일 수 있는 부분을 미니멀하게 완성시켰습니다.</p>
+                  <span>2022&hyphen;12&hyphen;02</span>
+                </a></li>
+                <li><a href="#">
+                  <h4>개빈 컬렉션 : 애슬레져 에디션</h4>
+                  <p>스포츠에서 영감을 얻은 시크한 개빈 아이템</p>
+                  <span>2022&hyphen;11&hyphen;17</span>
+                </a></li>
+              </ul>
+            </li>
+            <li id="m_tab2">
+              <ul>
+                <li><a href="#">
+                  <h4>있지(ITZY)</h4>
+                  <p>밸런스가 완벽한 스타일링을 위해 2022 겨울 컬렉션의 청키한 슈즈와 캐주얼한 착장을 함께 매칭한 모습.</p>
+                </a></li>
+                <li><a href="#">
+                  <h4>에이미 머레이(AMY MURRAY)</h4>
+                  <p>아이스 블루 컬러의 젬-엠벨리쉬드 튤 드레스와 실버 컬러로 반짝이는 젬-엠벨리쉬드 키튼 힐 펌프스를 착용해 우아하면서도 화려한 매력을 선보였습니다.</p>
+                </a></li>
+                <li><a href="#">
+                  <h4>애셔 야스빈첵(ASHER YASBINCEK)</h4>
+                  <p>2022 겨울 컬렉션의 코린스 블레이드 힐 부츠를 더해 멋스러운 레드 카펫 룩을 연출했습니다.</p>
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</div>
+
+<footer id="footer">
+  <div class="inner">
+    <div class="sitemap">
+      <h2 class="blind">사이트맵</h2>
+      <div class="sm1">
+        <h3>SHOPPING WHIT US</h3>
+        <ul>
+          <li><a href="#">나의 계정</a></li>
+          <li><a href="#">배송 조회</a></li>
+          <li><a href="#">반품 및 교환</a></li>
+          <li><a href="#">프로모션</a></li>
+          <li><a href="#">사이즈 가이드</a></li>
+          <li><a href="#">기프트 박스</a></li>
+        </ul>
+        <a href="#"><p class="n_letter">뉴스레터 구독하기</p></a>
+      </div>
+      <div class="sm2">
+        <h3>COSTOMER CARE</h3>
+        <ul>
+          <li><a href="#">주문 현황</a></li>
+          <li><a href="#">프리빌리지 멤버십</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">연락하기</a></li>
+          <li><a href="#">위조품 분별법</a></li>
+        </ul>
+      </div>
+      <div class="sm3">
+        <h3>ABOUT US</h3>
+        <ul>
+          <li><a href="#">매장 위치</a></li>
+          <li><a href="#">브랜드 프로필</a></li>
+          <li><a href="#">CHARLES & KEITH GROUP</a></li>
+          <li><a href="#">지속가능경영</a></li>
+          <li><a href="#">영향력 프로그램</a></li>
+          <li><a href="#">프랜차이즈 문의</a></li>
+          <li><a href="#">제휴 문의</a></li>
+          <li><a href="#">엠버서더</a></li>
+        </ul>
+      </div>
+      <div class="sm4">
+        <div class="sm4_1">
+          <h3>FOLLOW US</h3>
+          <ul class="sns_icons">
+            <li><a href="#"><img src="images/icons/facebook.gif" alt="페이스북"></a></li>
+            <li><a href="#"><img src="images/icons/youtube.gif" alt="유튜브"></a></li>
+            <li><a href="#"><img src="images/icons/instagram.gif" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="images/icons/tiktok.gif" alt="틱톡"></a></li>
+            <li><a href="#"><img src="images/icons/twitter.gif" alt="트위터"></a></li>
+            <li><a href="#"><img src="images/icons/kakao-talk.gif" alt="카카오톡"></a></li>
+            <li><a href="#"><img src="images/icons/pinterest.gif" alt="핀터레스트"></a></li>
+            <li><a href="#"><img src="images/icons/spotify.gif" alt="스포티파이"></a></li>
+            <li><a href="#"><img src="images/icons/telegram.gif" alt="텔레그램"></a></li>
+          </ul>
+        </div>
+        <div class="sm4_2">
+          <h3>APP DOWNLOAD</h3>
+          <ul class="download_icons">
+            <li><a href="#"><img src="images/icons/apple.gif" alt="Download On The App Store"></a></li>
+            <li><a href="#"><img src="images/icons/android.gif" alt="Get It On Goole Play"></a></li>
+          </ul>
+        </div>
+        <div class="sm4_3">
+          <h3>PAYMENT OPTION</h3>
+          <ul class="payment_icons">
+            <li><img src="images/icons/mastercard.png" alt="마스타 카드"></li>
+            <li><div><img src="images/icons/visa.png" alt="비자 카드"></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="copy">
+        <img src="images/charles-and-keith-logo.svg" alt="찰스앤키스" class="f_logo">
+        <div class="cs_center">
+          <p>070&hyphen;4769&hyphen;6685</p>
+          <p>(평일 10:00~17:00, 점심시간 12:30~14:00)</p>
+          <p>이메일 : customers@charleskeith.com</p>
+        </div>
+      </div>
+      <div class="company_info">
+        <ul>
+          <li><a href="#">쿠키 정책</a></li>
+          <li><a href="#">개인정보보호정책</a></li>
+          <li><a href="#">이용 약관</a></li>
+        </ul>
+        <p>찰스앤키스 사우스코리아(유) &nbsp;&vert;&nbsp; 대표자 : Fong Shee Beng (퐁쉬벵)<br>
+          사업자 등록번호 : 519-87-01028 &nbsp;&vert;&nbsp; 통신판매업신고 : 2018-서울강남-01968<br>
+          주소 : 서울특별시 강남구 선릉로162길 49 마루빌딩 5층</p>
+        <p>&copy; CHARLES & KEITH, all rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    // spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Reset */
+html,body {height:100%;}
+body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input {margin:0; padding:0;}
+h1,h2,h3,h4 {font-size:10px;}
+ul,li,ol {list-style:none;}
+img,fieldset,iframe {border:0;}
+img {vertical-align:top;}
+table {border-collapse:collapse;}
+a {text-decoration:none;}
+
+/* Base */
+body {font:16px 'Noto Sans KR'; color:black;}
+a {color:black; transition:.2s;}
+.blind {position:absolute; left:0; top:-99999px;}
+.skip_navigation a {position:absolute; left:0px; top:-99999px; z-index:1000; color:white; background:black; padding:10px 15px;}
+
+  /*
+  [CSS 작성 순서]
+  1. 레이아웃 : 표시, 넘침, 흐름, 위치, 크기, 간격
+  2. 디자인 : 테두리, 배경
+  3. 텍스트 : 폰트
+  4. 동작 - 기타
+  */
+
+/* Layout */
+#header {position:absolute; left:0px; top:0px; width:100%; background:rgba(255,255,255,0.5); z-index:1000;}
+#header .inner { margin:0 auto; width:1280px;}
+nav a:hover {text-decoration:underline; font-weight:700;}
+
+#visual {background:white;}
+
+#container {background:white;}
+#container section {padding:120px 0 135px 0;}
+#new {background:white;}
+#new .inner {margin:0 auto; width:1280px;}
+#spotlight {background:#f4eddd;}
+#spotlight .inner {margin:0 auto; width:1280px;}
+#social {background:#97986e;}
+#social .inner {margin:0 auto; width:1280px;}
+
+#footer {background:#222;}
+#footer .inner {margin:0 auto; width:1280px;}
+#footer .sitemap {color:white;}
+#footer .sitemap a {color:white;}
+#footer .copyright {color:#888;}
+#footer .copyright a {color:#888;}
+
+/* Header */
+.h_top_area {position:relative; width:100%; height:100px;}
+h1 {position:absolute; left:calc(50% - 384px/2); top:37px; width:384px; }
+.util {position:absolute; right:0; top:45px; display:flex; justify-content:space-between; width:105px; height:22px;}
+
+nav {width:100%; height:100px; font-size:14px;}
+.main_menu {line-height:100px;}
+.gnb {display:flex; justify-content:space-between;}
+.gnb h3 {margin:40px 0 10px 0; font-size:14px;}
+.gnb h3.sub_top {margin-top:0}
+.gnb .main {position:relative; z-index:20; width:180px; height:100px; text-align:center;}
+.gnb .sub {margin:60px 0; padding-left:20px; text-align:left;}
+.gnb .sub li{line-height:30px;}
+
+.gnb_bg {position:absolute; left:0px; top:200px; z-index:10; width:100vw; height:450px; background:rgba(255,255,255,0.8);}
+
+/* Visual */
+#visual .mySwiper {width:100%;}
+/* Swiper PlugIn styles */
+
+#visual .mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+#visual .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#visual .mySwiper .swiper-button {color:#fff; opacity:1;}
+#visual .mySwiper .swiper-button-next {right:50px;}
+#visual .mySwiper .swiper-button-prev {left:50px;}
+
+/* Container */
+h2 {margin:0 auto; padding-bottom:35px; font-size:18px; font-weight:bold; text-align:center; letter-spacing:2px; line-height:1.3rem;}
+h2 span {font-size:13px; font-weight:400; text-transform:uppercase;}
+
+#new ul {display:flex; justify-content:space-between; width:100%; }
+#new ul li {width:250px; text-align:center;}
+#new ul li img {overflow:hidden; transition:0.5s; width:250px; height:250px; margin-bottom:30px;}
+#new ul li img:hover {transform:scale(1.1, 1.1);}
+
+#spotlight ul {display:flex; justify-content:space-between; width:100%;}
+#spotlight ul li {width:380px;}
+#spotlight ul li img {width:100%; height:490px;}
+#spotlight ul li>div {display:flex; flex-direction:column; justify-content:space-between; width:100%; height:210px; padding:30px; box-sizing:border-box; background:white;}
+#spotlight h3 {font-size:16px; margin-bottom:7px;}
+#spotlight .btn {padding:12px 0; box-sizing:border-box; width:320px; background:black; color:white; text-align:center;}
+#spotlight .btn:hover {color:#ffd900;}
+
+#social h2 {color:white;}
+#social .youtube {float:left;}
+#social .magazine {float:right;}
+#social .inner:after {content:""; display:block; clear:both;}
+.magazine .m_tab {display:flex;}
+.m_tab li a {display:inline-block; width:160px; height:58px; background:white; border-top-left-radius:15px; border-top-right-radius:15px; text-align:center; line-height:58px; font-weight:700; color:#97986e;}
+.m_tab_contents>li {padding:40px 35px 0 35px; box-sizing:border-box; width:450px; height:380px; background:white;border-top-right-radius:15px; border-bottom-left-radius:15px; border-bottom-right-radius:15px;}
+.m_tab_contents ul li {margin-bottom:25px;}
+.m_tab_contents ul li a {color:#646c5f;}
+.m_tab_contents ul li a:hover {color:darkolivegreen;}
+.m_tab_contents h4 {font-size:16px;}
+.m_tab_contents span {margin-top:20px; font-size:14px; font-weight:300;}
+
+/* Footer */
+#footer {padding:120px 0; box-sizing:border-box;}
+#footer a {transition:none;}
+#footer a:hover {color:#ccc;}
+.sitemap {display:flex; justify-content:space-between; font-weight:300; margin-bottom:100px;}
+.sitemap>div {width:320px;}
+.sitemap h3 {font-size:16px; margin-bottom:20px;}
+.sitemap ul li {margin:5px;}
+.sitemap .n_letter {width:200px; margin-top:50px; padding:10px 0; border:1px solid white; border-radius:5px; text-align:center;}
+.sitemap .n_letter:hover {background:#444;}
+.sm4>div {margin-bottom:35px;}
+.sm4 ul {display:flex;}
+.sns_icons {flex-wrap:wrap; width:180px;}
+.sns_icons img {width:25px; margin:-1px;}
+.download_icons img {height:30px;}
+.payment_icons img {height:24px;}
+
+.copyright {display:flex; justify-content:space-between; font-size:14px;}
+.f_logo {margin-bottom:30px; height:25px; filter:invert(0.6);}
+.cs_center p:nth-child(1) {font-size:24px; font-weight:bold;}
+.cs_center p:nth-child(3) {margin-top:18px; font-weight:300;}
+.company_info {text-align:right;}
+.company_info ul:after {content:""; display:block; clear:both;}
+.company_info li {float:right; padding:0 20px; margin-bottom:30px; border-right:1px solid #888;}
+.company_info li:nth-child(1) {border:0; padding-right:0;}
+.company_info p {font-weight:300;}
+

@@ -1,0 +1,35 @@
+@import url(common.css);
+
+/* Visual_col */
+#visual_col {margin:60px;}
+#visual_col .inner {display:flex; width:100%; margin:0 auto;}
+#visual_col .inner img {width:1260px; height:757px;}
+#visual_col .v_title {width:540px; height:420px; margin-left:-300px; margin-top:420px; margin-bottom:240px; padding:60px; box-sizing:border-box; background:white;}
+#visual_col .v_title h3 {margin-bottom:40px; font:bold 45px 'univers'; line-height:45px; text-transform:uppercase; text-align:center;}
+#visual_col .v_title p {font-size:18px; line-height:30px; text-align:justify;}
+
+/* Container_sub */
+#footer {background:black;}
+#container_sub {position:relative;}
+.con_group::after {content:""; display:block; clear:both;}
+.con_group img {float:left; display: block; width:600px; height:750px; box-sizing:border-box;}
+.con_group .son2 {margin-top:300px;}
+.con_group .son4 {position:absolute; right:60px; top:1320px; z-index:-1; width:1238px; }
+.con_group .son3 {margin-top:420px; margin-bottom:180px;}
+.con_group.con1 .text {float:left; width:600px; height:240px; margin-left:180px; margin-top:-150px; margin-bottom:180px; padding:60px; background:white; box-sizing:border-box;}
+.con_group.con2 .text {float:left; width:420px; height:300px; margin-left:180px; margin-top:660px; padding:60px; background:white; box-sizing:border-box;}
+.con_group .text h4 {margin-bottom:35px; font:bold 35px 'univers'; text-transform:uppercase; text-align:center;}
+.con_group .text p {font-size:16px; line-height:25px; text-align:center;}
+
+.products {margin:0 60px;}
+.products .pd_title {margin:0 auto; width:1200px; height:420px; background:white; text-align:center; font-size:35px; font-weight:bold; padding:120px; box-sizing:border-box;}
+.products .pd_img ul {margin:0 auto; display:flex; justify-content:space-between;}
+.products .pd_img li {position:relative; width:calc((100% - 24px)/4); margin-top:-180px;}
+.products .pd_img img {width:100%; height:auto;}
+.products .pd_img .pd_name {position:absolute; left:0; top:0; display:flex; justify-content:space-between; padding:60px; box-sizing:border-box; width:100%; height:240px; background:linear-gradient(black, rgba(0,0,0,0)); color:white;}
+.products .pd_img .pd_name .name {font-size:30px; font-weight:600; margin-bottom:30px;}
+.products .pd_img .pd_name .more {font-size:18px; font-weight:200;}
+
+/* Background */
+body {background:url(../images/sub_col_background.jpg) #ececec left top no-repeat;}
+.pd_bg {width:100%; height:600px; margin-top:-420px; background:#555;}
