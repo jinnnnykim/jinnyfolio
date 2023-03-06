@@ -1,0 +1,340 @@
+` <!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Maison Kitsune&#769;</title>
+<!-- 아이콘 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
+<!-- 글꼴 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/sub_gift.css">
+<link rel="stylesheet" href="css/sub_mediaquery.css">
+ 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/sub_gnb.js"></script>
+<script>
+$(function(){ //팝업
+  $('body').css({overflow:'hidden'});
+  $('.pop_exit').click(function(){
+    $('.information_pop').slideUp();
+    $('body').css({overflow:'auto'});
+  });
+});
+$(function(){ //페이지 번호
+  $('.page_btn li a').eq(0).addClass('page_fo');
+  $('.page_btn li a').click(function(){
+    $('.page_btn li a').removeClass('page_fo');
+    $(this).addClass('page_fo');
+    return false;
+  });
+});
+</script>
+</head>
+<body>
+<div class="information_pop">
+  <a href="#" class="pop_exit"><span class="material-symbols-outlined">close</span></a>
+  <p class="pop_text">
+    서브페이지는 <b>반응형 웹사이트</b>로 코딩하였습니다.<br>
+    브라우저 창의 너비를 조절해보시면<br>
+    <b>일반 모니터&comma;</b> <b>폭이 좁은 모니터&lpar;1&comma;400px&rpar;&comma;</b> <b>태블릿PC&comma;</b> <b>모바일</b> 사이트를 보실 수 있습니다.
+  </p>
+</div>
+
+<div class="skip_navigation">
+  <a href="#container">본문 바로가기</a>
+  <a href="#footer">하단 바로가기</a>
+</div>
+<header id="header">
+<div class="inner">
+  <h1><a href="./MaisonKitsune_main.html"><img src="images/logo_mk.svg" alt="Maison Kitsune"></a></h1>
+  <h2 class="blind">주요 메뉴</h2>
+  <nav class="sub_gnb">
+    <ul>
+      <li class="main">
+        <a href="#">남성</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="./MaisonKitsune_shop.html">여성</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+          <li><a href="#">치마</a></li>
+          <li><a href="#">원피스</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">아동</a>
+        <ul class="sub">
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+          <li><a href="#">치마</a></li>
+          <li><a href="#">원피스</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">잡화</a>
+        <ul class="sub">
+          <li><a href="#">가방</a></li>
+          <li><a href="#">모자</a></li>
+          <li><a href="#">신발</a></li>
+          <li><a href="#">양말</a></li>
+          <li><a href="#">스카프&amp;머플러</a></li>
+          <li><a href="#">주얼리</a></li>
+          <li><a href="#">스마트폰 액세서리</a></li>
+        </ul>
+      </li>
+      <li class="main">
+        <a href="#">콜라보</a>
+        <ul class="sub">
+          <li><a href="#">콜라보 상품</a></li>
+        </ul>
+      </li>
+      <div class="in_gnb_util">
+        <h2 class="blind">도구 메뉴</h2>
+        <div>
+          <form action="#">
+            <fieldset>
+              <legend class="blind">통합검색</legend>
+              <label for="search_text" class="blind">검색어 입력</label>
+              <input type="text" id="search_text">
+              <a href="#"><span class="ion-ios-search-strong icon"><b class="blind">검색</b></span></a>
+            </fieldset>
+          </form>
+        </div>
+        <ul>
+          <li><a href="#"><span class="material-symbols-outlined icon">notifications<b class="blind">알림</b></span></a></li>
+          <li><a href="#"><span class="ion-android-person icon"><b class="blind">마이페이지</b></span></a></li>
+          <li><a href="#"><span class="material-symbols-outlined icon">shopping_bag<b class="blind">장바구니</b></span></a></li>
+        </ul>
+      </div>
+    </ul>
+  </nav>
+  <ul class="util">
+    <h2 class="blind">도구 메뉴</h2>
+    <li>
+      <form action="#">
+      <fieldset>
+        <legend class="blind">통합검색</legend>
+        <label for="search_text" class="blind">검색어 입력</label>
+        <input type="text" id="search_text">
+        <a href="#"><span class="ion-ios-search-strong icon"><b class="blind">검색</b></span></a>
+      </fieldset>
+      </form>
+    </li>
+    <li><a href="#"><span class="material-symbols-outlined icon">notifications<b class="blind">알림</b></span></a></li>
+    <li><a href="#"><span class="ion-android-person icon"><b class="blind">마이페이지</b></span></a></li>
+    <li><a href="#"><span class="material-symbols-outlined icon">shopping_bag<b class="blind">장바구니</b></span></a></li>
+  </ul>
+  <div class="gnb_btn">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<div class="sub_bg"></div>
+</header>
+<section id="visual">
+  <div class="gift_visual">
+    <img src="images/gift-visual.jpg" alt="메종키츠네 홀리데이 기프트 가이드">
+    <div class="gift_title">
+      <div>holiday</div>
+      <p>gift guide</p>
+    </div>
+  </div>
+  <div class="categories">
+    <div class="acc">
+      <div class="thumbnail">
+        <img src="images/g_winter_acc.jpg" alt="겨울 액세서리 이미지">
+      </div>
+      <div class="thumb_text">
+        <p class="tiny">Winter</p>
+        <p class="title">acc</p>
+      </div>
+    </div>
+    <div class="her">
+      <div class="thumbnail">
+        <img src="images/g_for_her.jpg" alt="여성 선물 이미지">
+      </div>
+      <div class="thumb_text">
+        <p class="tiny">Gift for</p>
+        <p class="title">her</p>
+      </div>
+    </div>
+    <div class="him">
+      <div class="thumbnail">
+        <img src="images/g_for_him.jpg" alt="남성 선물 이미지">
+      </div>
+      <div class="thumb_text">
+        <p class="tiny">Gift for</p>
+        <p class="title">him</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="container_sub">
+  <div class="products_wrap">
+    <div class="products"><a href="#">
+      <img src="images/gift_products/muffler_checkers.jpg" alt="체크 목도리 핑크 레드">
+      <div class="pd_info">
+        <p class="name">체크 목도리 &hyphen; 핑크 레드</p>
+        <div class="price">
+          <span class="sale">375,250<span class="won">원</span></span>
+          <span class="original">&nbsp;395,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/beanie_bk.jpg" alt="폭스헤드 패치 골지 비니 블랙">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 골지 비니 &hyphen; 블랙</p>
+        <div class="price">
+          <span class="sale">128,250</span><span class="won">원</span></span>
+          <span class="original">&nbsp;135,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/beanie_gr.jpg" alt="폭스헤드 패치 골지 비니 그린">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 골지 비니 &hyphen; 딥 그린</p>
+        <div class="price">
+          <span class="sale">128,250</span><span class="won">원</span></span>
+          <span class="original">&nbsp;135,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/muffler_gray.jpg" alt="폭스헤드 패치 울 목도리 멜란지">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 울 목도리 &hyphen; 멜란지</p>
+        <div class="price">
+          <span class="sale">270,750</span><span class="won">원</span></span>
+          <span class="original">&nbsp;285,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/beanie_wi.jpg" alt="폭스헤드 패치 골지 비니 와인">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 골지 비니 &hyphen; 와인</p>
+        <div class="price">
+          <span class="sale">128,250</span><span class="won">원</span></span>
+          <span class="original">&nbsp;135,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/socks.jpg" alt="폭스헤드 양말 화이트">
+      <div class="pd_info">
+        <p class="name">폭스헤드 양말 &hyphen; 화이트</p>
+        <div class="price">
+          <span class="sale">56,050</span><span class="won">원</span></span>
+          <span class="original">&nbsp;59,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/beanie_wi.jpg" alt="폭스헤드 울 목도리 와인">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 울 목도리 &hyphen; 와인</p>
+        <div class="price">
+          <span class="sale">270,750</span><span class="won">원</span></span>
+          <span class="original">&nbsp;285,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+    <div class="products"><a href="#">
+      <img src="images/gift_products/beanie_nv.jpg" alt="폭스헤드 패치 골지 비니 네이비">
+      <div class="pd_info">
+        <p class="name">폭스헤드 패치 골지 비니 &hyphen; 네이비</p>
+        <div class="price">
+          <span class="sale">128,250</span><span class="won">원</span></span>
+          <span class="original">&nbsp;135,000&nbsp;</span><span class="percent">5&percnt;</span>
+        </div>
+      </div>
+    </a></div>
+  </div>
+  <ul class="page_btn">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+  </ul>
+</section>
+<footer id="footer">
+<div class="inner">
+  <div class="sitemap">
+    <h2 class="blind">사이트맵</h2>
+    <ul>
+      <li class="sm_main">
+        <h3>고객 서비스</h3>
+        <ul class="sm_sub">
+          <li><a href="#">주문 조회하기</a></li>
+          <li><a href="#">배송 조회하기</a></li>
+          <li><a href="#">반품하기</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">사이즈 가이드</a></li>
+          <li><a href="#">1:1 문의하기</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>메종키츠네</h3>
+        <ul class="sm_sub">
+          <li><a href="#">매장 찾기</a></li>
+          <li><a href="#">카페 키츠네</a></li>
+          <li><a href="#">커리어</a></li>
+          <li><a href="#">프랜차이즈 문의</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>이용 안내</h3>
+        <ul class="sm_sub">
+          <li><a href="#">법률 정보</a></li>
+          <li><a href="#">메종키츠네 이용 약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </li>
+      <li class="sm_main">
+        <h3>언어(Language)</h3>
+        <form action="#">
+          <fieldset>
+            <legend class="blind">언어 선택</legend>
+            <label for="lang" class="blind">언어 선택</label>
+            <select id="lang" class="lang_choice"> <!-- 1개만 선택할 수 있는 목록 -->
+              <option>Korean</option>
+              <option>English</option>
+            </select>
+          </fieldset>
+        </form>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div class="copyright">
+    <h2 class="blind">저작권&comma; SNS</h2>
+    <p>&copy; Maison Kitsune&#769; All Reserved 2023</p>
+    <ul>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="인스타그램"></a></li>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2168/2168336.png" alt="트위터"></a></li>
+      <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2168/2168281.png" alt="페이스북"></a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

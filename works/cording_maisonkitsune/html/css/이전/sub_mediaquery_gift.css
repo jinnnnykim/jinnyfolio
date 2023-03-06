@@ -1,0 +1,18 @@
+/* Mediaquery */
+@media all and (max-width:767px) { /* 스마트폰 */
+  #container_sub {padding-top:0px;}
+  .products_wrap .products {width:calc((100% - 4px)/2);}
+  .pd_info .price .sale {display:block; margin-bottom:8px;}
+}
+@media all and (min-width:768px) and (max-width:1023px) { /* 태블릿 */ 
+  #container_sub {padding-top:0px;}
+  .products_wrap .products {width:calc((100% - 8px)/3);}
+  .pd_info .price .sale {display:block; margin-bottom:8px;}
+}
+@media all and (min-width:1024px) and (max-width:1400px) { /* 작은 모니터 */ 
+  section#visual {top:75px;}
+  #visual .gift_title div {font-size:80px;}
+  #visual .gift_title p {font-size:50px;}
+  #visual .categories {width:900px; height:350px; left:calc(50% - 900px/2);}
+  .products_wrap .products {width:calc((100% - 8px)/3);}
+}

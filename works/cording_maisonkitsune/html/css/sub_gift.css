@@ -1,0 +1,60 @@
+#visual {position:relative; left:0px; top:188px; width:100%;}
+.gift_visual {background:#d1c0af;}
+.gift_visual:after {content:""; display:block; clear:both;}
+.gift_visual img {float:right; width:50%;}
+.gift_title {position:absolute; left:0px; top:calc(50% - 206px/2); width:50%; text-align:center;}
+.gift_title div {font:700 100px 'Libre Bodoni'; text-transform:uppercase; color:#6c1816;}
+.gift_title p {margin-top:0px; font:italic 300 65px 'Libre Bodoni'; text-transform:capitalize; color:#441918;}
+
+#visual .categories {position:absolute; left:calc(50% - 1170px/2); top:90%; display:flex; justify-content:space-between; width:1170px;}
+div.acc, div.her, div.him {width:calc((100% - 80px)/3); cursor:pointer;}
+.categories .thumbnail {height:450px; overflow:hidden;}
+.categories .thumb_text {padding:40px; text-align:center;}
+.thumb_text .tiny {margin-bottom:5px; font:25px 'Baskervville'; color:#d1c0af;}
+.thumb_text .title {font:60px 'Libre Bodoni'; color:white; text-transform:uppercase; letter-spacing:1.5px;}
+.acc .thumb_text {background:#0e1e2e;}
+.her .thumb_text, .him .thumb_text {background:#441918;}
+
+#container_sub {padding-top:800px;}
+
+
+
+/* Mediaquery */
+@media all and (max-width:767px) { /* 스마트폰 */
+  #visual {top:90px;}
+  #visual .gift_visual img {float:none; width:100%;}
+  #visual .gift_title {top:calc(50% - 105px/2); width:100%; filter:drop-shadow(0 0 10px rgba(0,0,0,0.7))}
+  #visual .gift_title div {font-size:60px; color:white;}
+  #visual .gift_title p {font-size:35px; color:white;}
+  #visual .categories {width:400px; left:calc(50% - 400px/2);}
+  div.acc, div.her, div.him {width:calc((100% - 40px)/3);}
+  .categories .thumbnail {display:none;}
+  .categories .thumb_text {padding:30px 0;}
+  .thumb_text .tiny {font-size:18px;}
+  .thumb_text .title {font-size:30px;}
+  #container_sub {padding-top:200px;}
+  .products_wrap .products {width:calc((100% - 8px)/2);}
+  .pd_info .price .sale {display:block; margin-bottom:8px;}
+}
+@media all and (min-width:768px) and (max-width:1023px) { /* 태블릿 */ 
+  #visual {top:90px;}
+  #visual .gift_title {top:calc(50% - 105px/2);}
+  #visual .gift_title div {font-size:60px;}
+  #visual .gift_title p {font-size:35px;}
+  #visual .categories {width:700px; left:calc(50% - 700px/2);}
+  .categories .thumbnail {display:none;}
+  .thumb_text .tiny {font-size:18px;}
+  .thumb_text .title {font-size:40px;}
+  #container_sub {padding-top:230px;}
+  .products_wrap .products {width:calc((100% - 8px)/3);}
+  .pd_info .price .sale {display:block; margin-bottom:8px;}
+}
+@media all and (min-width:1024px) and (max-width:1400px) { /* 작은 모니터 */ 
+  #visual {top:243px;}
+  #visual .gift_title div {font-size:80px;}
+  #visual .gift_title p {font-size:50px;}
+  #visual .categories {width:900px; left:calc(50% - 900px/2);}
+  .categories .thumbnail {height:350px;}
+  #container_sub {padding-top:770px;}
+  .products_wrap .products {width:calc((100% - 8px)/3);}
+}
