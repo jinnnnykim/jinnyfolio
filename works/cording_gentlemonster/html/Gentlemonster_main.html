@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENTLE MONSTER</title>
+<!-- 아이콘 -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+<link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+  
+$(function(){ //팝업
+  $('body').css({overflow:'hidden'});
+  $('.information_pop').hide();
+  $('.pop_exit').click(function(){
+    $('.information_pop').slideUp();
+    $('body').css({overflow:'auto'});
+  });
+});
+
+$(function(){
+  //초기설정
+  $('#container .location img').css({top:0, opacity:0});
+  $('#container .event img').css({top:0, opacity:0});
+  $('#container .new img').css({top:260, opacity:0});
+  $('#container .colabo img').css({top:220, opacity:0});
+  $('#container .sunglasses.bl').css({top:200, opacity:0});
+  $('#container .sunglasses.wh').css({top:80, opacity:0});
+  $('.information_pop').hide();
+  //움직임설정
+  $('#container .location img').delay(100).animate({top:60, opacity:1},1000);
+  $('#container .new img').delay(300).animate({top:300, opacity:1},1000);
+  $('#container .colabo img').delay(500).animate({top:240, opacity:1},1000);
+  $('#container .event img').delay(700).animate({top:60, opacity:1},1000);
+  $('#container .sunglasses.bl').delay(1400).animate({top:240, opacity:1},1000);
+  $('#container .sunglasses.wh').delay(1600).animate({top:120, opacity:1},1000);
+  $('.information_pop').delay(2600).slideDown(200);
+});
+
+</script>
+</head>
+<body>
+<div class="information_pop">
+  <a href="#" class="pop_exit"><span class="material-symbols-outlined">close</span></a>
+  <p class="pop_text">
+    GNB의 <b>선글라스&comma; 안경&comma; 콜라보레이션</b> 메뉴를 클릭하시면<br>
+    <b>서브페이지</b>를 보실 수 있습니다.
+  </p>
+</div>
+
+<header id="header">
+  <div class="inner">
+    <h1><a href="Gentlemonster_main.html"><img src="images/Gentle_monster.svg" alt="gentlemonster"></a></h1>
+    <nav>
+      <h2 class="blind">주요 메뉴</h2>
+      <ul class="gnb">
+        <li class="mn_fo"><a href="Gentlemonster_shop-sg_bk.html">선글라스</a></li>
+        <li><a href="Gentlemonster_shop-gl_gd.html">안경</a></li>
+        <li><a href="Gentlemonster_colaboration.html">콜라보레이션</a></li>
+        <li><a href="#">스타일</a></li>
+        <li><a href="#">브랜드이슈</a></li>
+        <li><a href="#">매장 보기</a></li>
+        <li><a href="#">수리서비스</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <h2 class="blind">마이 메뉴</h2>
+      <ul class="util">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">장바구니</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="container">
+  <div class="inner">
+    <div class="area lo_ev">
+      <div class="area lo">
+        <div class="location">
+          <a href="#"><p class="con_title">매장위치</p></a>
+          <a href="#"><img src="images/location.jpg" alt="매장위치"></a>
+        </div>
+        <img src="images/sun_bl.png" alt="검은색 선글라스" class="sunglasses bl">
+        <img src="images/sun_bl_sdw.png" alt="검은색 선글라스 그림자" class="sunglasses bl sdw">
+      </div>
+      <div class="area ev">
+        <div class="event">
+          <a href="#"><p class="con_title">이벤트</p></a>
+          <a href="#"><img src="images/event.jpg" alt="이벤트"></a>
+        </div>
+      </div>
+    </div>
+    <div class="area ne">
+      <div class="new">
+        <a href="#"><p class="con_title">신규 컬렉션</p></a>
+        <a href="#"><img src="images/new.jpg" alt="신규 컬렉션"></a>
+      </div>
+    </div>
+    <div class="area co">
+      <div class="colabo">
+        <a href="#"><p class="con_title">젠틀몬스터&times;손흥민</p></a>
+        <a href="#"><img src="images/collabo.jpg" alt="젠틀몬스터x손흥민 콜라보"></a>
+      </div>
+      <img src="images/sun_wh.png" alt="흰색 선글라스" class="sunglasses wh">
+      <img src="images/sun_wh_sdw.png" alt="흰색 선글라스 그림자" class="sunglasses wh sdw">
+    </div>
+  </div>
+</div>
+<footer id="footer">
+  <p>&copy; <span>gentlemonster</span> all right reserved</p>
+</footer>
+</body>
+</html>

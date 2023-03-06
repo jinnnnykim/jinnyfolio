@@ -1,0 +1,38 @@
+@font-face { 
+  font-family:'univers'; 
+  src: url('../fonts/Univers_57_Condensed.woff') format('woff'); 
+  }
+  
+  /* Reset */
+  html,body {height:100%;}
+  body,div,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,button,input {margin:0; padding:0; border:0;}
+  h1,h2,h3,h4,h5,h6 {font-size:12px;}
+  ul,li,ol {list-style:none;}
+  a {text-decoration:none;}
+  img,fieldset,iframe {border:0;}
+  img {vertical-align:top;}
+  table {border-collapse:collapse;}
+  
+  /* Base */
+  body {position:relative; font:14px 'SUIT'; line-height:100%; overflow-x:hidden;}
+  a {color:black;}
+  .blind {position:absolute; left:0; top:-100000%;}
+  .skip_navigation a {position:absolute; left:0px; top:-9999px; z-index:1001; color:white; background:black; padding:5px;}
+  .skip_navigation a:focus {top:0;}
+  
+  /* Layout */
+  #footer {width:100%; height:60px; text-align:center; color:white;}
+  .inner {width:/*62.5%*/1200px; margin:0 auto;}
+  
+  /* Header */
+  #header .inner {position:relative; height:120px; font-weight:800;}
+  #header h1 {position:absolute; left:0px; top:45px; width:300px;}
+  .gnb {position:absolute; right:0px; top:53px; width:650px; display:flex; justify-content:space-between; font-size:16px;}
+  .gnb li a:hover {color:#555;}
+  .util {position:absolute; right:0px; top:27px; display:flex;}
+  .util li {margin-left:40px; font-size:14px;}
+  
+  /* Footer */
+  #footer p {font:13px 'univers'; line-height:60px; text-transform:capitalize;}
+  #footer p span {text-transform:uppercase;}
+  
